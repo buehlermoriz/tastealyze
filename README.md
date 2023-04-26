@@ -41,3 +41,11 @@ npm run preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 # tastealyze
+
+
+for deployment run 
+
+```bash
+npm run generate
+firebase deploy
+```
