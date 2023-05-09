@@ -1,7 +1,7 @@
 <template>
 <NuxtLayout>
   <head_hero />
-  <!-- <sidebar /> -->
+  <sidebar />
   <Wordcloud />
 </NuxtLayout>
 
