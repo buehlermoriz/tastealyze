@@ -1,9 +1,8 @@
 <template>
-  <!-- component -->
 <NuxtLayout>
   <head_hero />
-  <sidebar />
-
+  <!-- <sidebar /> -->
+  <Wordcloud />
 </NuxtLayout>
 
 
