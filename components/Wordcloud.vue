@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-<!--<template>
- Wordcloud 
-<vue-word-cloud
-  style="
-    height: 480px;
-    width: 640px;
-  "
-  :words="[['romance', 19], ['horror', 3], ['fantasy', 7], ['adventure', 3]]"
-  :color="([, weight]) => weight > 10 ? 'DeepPink' : weight > 5 ? 'RoyalBlue' : 'Indigo'"
-  font-family="Roboto"
-/>
-=======
 <template>
 <!-- Wordcloud-->
 <div class="wordcloud">
@@ -25,7 +12,6 @@
       spacing=0.5
     />
 </div>
->>>>>>> wordcloud
 </template>
 <script>
 import VueWordCloud from 'vuewordcloud';
@@ -37,9 +23,6 @@ export default {
     'keywords'
 ],
 };
-<<<<<<< HEAD
-</script>-->
-=======
 </script>
 <style>
 .wordcloud {
@@ -50,4 +33,3 @@ export default {
   width: 100%;
 }
 </style>
->>>>>>> wordcloud
