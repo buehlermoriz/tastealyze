@@ -1,5 +1,5 @@
-<template>
-<!-- Wordcloud -->
+<!--<template>
+ Wordcloud 
 <vue-word-cloud
   style="
     height: 480px;
@@ -17,4 +17,4 @@ export default {
     [VueWordCloud.name]: VueWordCloud,
   },
 };
-</script>
+</script>-->
