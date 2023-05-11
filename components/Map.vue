@@ -35,7 +35,7 @@ export default {
       .catch((error) => console.log(error));
   },
 };
-d3.csv("../assets/countries.csv",  (data) => {
+d3.csv('../assets/countries.csv',  (data) => {
   console.log(data);
   // create a map from the data using the country name as the key
   var countryData = d3.map(data, function (d) {
