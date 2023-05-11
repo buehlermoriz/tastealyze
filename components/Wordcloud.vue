@@ -5,11 +5,11 @@
       style="
         height: 480px;
         width: 640px;
-      "
+        "
       :words=keywords
       :color="([, weight]) => weight > 0.4 ? 'DeepPink' : weight > 0.2 ? 'RoyalBlue' : 'Indigo'"
       font-family="Roboto"
-      spacing=0.5
+      :spacing = 0.5
     />
 </div>
 </template>
