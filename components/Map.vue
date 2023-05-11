@@ -38,7 +38,7 @@ export default {
       // parse the CSV data into an array of objects
       data = data.map(function (d) {
         return {
-          country: d[""],
+          country: d["country"],
           points: +d["points"],
           price: +d["price"],
           sentiment: +d["sentiment"],
@@ -51,8 +51,14 @@ export default {
 
       g.selectAll("path").style("fill", function (d) {
         var country = d.properties.name;
-        var points = countryData.get(country)[0].points;
-        return colorScale(points);
+        var countryPoints = countryData.get(country);
+        if (countryPoints) {
+          var points = countryPoints[0] ? +countryPoints[0].points : 0;
+          return colorScale(points);
+        } else {
+          console.log(countryPoints);
+          return "#ccc";
+        }
       });
     });
   },
