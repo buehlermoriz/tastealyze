@@ -1,13 +1,13 @@
 <template>
 <!-- Wordcloud-->
-<div class="wordcloud">
+<div class="wordcloud pt-8">
     <vue-word-cloud
       style="
-        height: 480px;
-        width: 640px;
+        height: 576px;
+        width: 1024px;
       "
       :words=keywords
-      :color="([, weight]) => weight > 0.4 ? 'DeepPink' : weight > 0.2 ? 'RoyalBlue' : 'Indigo'"
+      :color="([, weight]) => weight > 0.4 ? '#7C0A02' : weight > 0.2 ? '#c4c0b9' : '#7e6c65'"
       font-family="Roboto"
       :spacing=0.5
     />
@@ -29,7 +29,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+ /* height: 100%; */
   width: 100%;
 }
 </style>
