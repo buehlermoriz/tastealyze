@@ -1,65 +1,65 @@
 <template>
   <div id="map"></div>
 </template>
+
 <script>
 import * as d3 from "d3";
-import { geoMercator, geoPath } from "d3-geo";
-import * as topojson from "topojson-client";
 
 export default {
   mounted() {
     var width = 900;
     var height = 600;
 
-    var projection = d3.geoMercator();
-
+    // The svg
     var svg = d3
       .select("#map")
       .append("svg")
       .attr("width", width)
       .attr("height", height);
-    var path = d3.geoPath().projection(projection);
-    var g = svg.append("g");
-    var url = "https://unpkg.com/world-atlas@2.0.2/countries-110m.json";
-    fetch(url)
-      .then((response) => response.json())
-      .then((topology) => {
-        g.selectAll("path")
-          .data(topojson.feature(topology, topology.objects.countries).features)
-          .enter()
-          .append("path")
-          .attr("d", path);
-      })
-      .catch((error) => console.log(error));
-    d3.csv(
-      "https://raw.githubusercontent.com/buehlermoriz/tastealyze/Map/assets/countries.csv"
-    ).then(function (data) {
-      console.log(data);
-      // parse the CSV data into an array of objects
-      data = data.map(function (d) {
-        return {
-          country: d["country"],
-          points: +d["points"],
-          price: +d["price"],
-          sentiment: +d["sentiment"],
-        };
-      });
-      // create a map from the data using the country name as the key
-      var countryData = d3.group(data, function (d) {
-        return d.country;
-      });
 
-      g.selectAll("path").style("fill", function (d) {
-        var country = d.properties.name;
-        var countryPoints = countryData.get(country);
-        if (countryPoints) {
-          var points = countryPoints[0] ? +countryPoints[0].points : 0;
+    // Map and projection
+    const path = d3.geoPath();
+    const projection = d3
+      .geoMercator()
+      .scale(70)
+      .center([0, 20])
+      .translate([width / 2, height / 2]);
+
+    // Load external data and boot
+    Promise.all([
+      d3.json(
+        "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"
+      ),
+      d3.csv(
+        "https://raw.githubusercontent.com/buehlermoriz/tastealyze/Map/assets/countries.csv"
+      ),
+    ]).then(function (loadData) {
+      let topo = loadData[0];
+      let data = loadData[1];
+
+      // Create a map from country code to points
+      let pointsByCountry = new Map(data.map((d) => [d.country, +d.points]));
+
+      const colorScale = d3
+        .scaleThreshold()
+        .domain([0.2, 0.4, 0.6, 0.8, 1])
+        .range(d3.schemeReds[6]);
+
+      // Draw the map
+      svg
+        .append("g")
+        .selectAll("path")
+        .data(topo.features)
+        .join("path")
+        // draw each country
+        .attr("d", d3.geoPath().projection(projection))
+        // set the color of each country based on points
+        .attr("fill", function (d) {
+          let points = pointsByCountry.get(d.properties.name) || 0;
           return colorScale(points);
-        } else {
-          console.log(countryPoints);
-          return "#ccc";
-        }
-      });
+        })
+        .attr("stroke", "white")
+        .attr("stroke-width", 0.5);
     });
   },
 };
