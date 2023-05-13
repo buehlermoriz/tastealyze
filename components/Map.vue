@@ -28,10 +28,10 @@ export default {
     // Load external data and boot
     Promise.all([
       d3.json(
-        "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"
+        "https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/wold_map.geojson"
       ),
       d3.csv(
-        "https://raw.githubusercontent.com/buehlermoriz/tastealyze/Map/assets/countries.csv"
+        "https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/countries.csv"
       ),
     ]).then(function (loadData) {
       let topo = loadData[0];
