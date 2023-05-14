@@ -7,8 +7,8 @@ import * as d3 from "d3";
 
 export default {
   mounted() {
-    var width = 1600;
-    var height = 900;
+    var width = 1100;
+    var height = 800;
 
     // The svg
     var svg = d3
@@ -21,9 +21,9 @@ export default {
     const path = d3.geoPath();
     const projection = d3
       .geoMercator()
-      .scale(180)
-      .center([0, 40])
-   	.translate([width / 2, height / 2]);
+      .scale(160)
+      .center([0, 60])
+
   
 
     // Load external data and boot
@@ -65,3 +65,13 @@ export default {
   },
 };
 </script>
+<style>
+#map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+</style>
