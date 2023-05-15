@@ -1,33 +1,61 @@
 <template>
-  <div class="grid grid-cols-5 gap-y-1"> 
-  <div class="col-span-4 flex items-center">
-    <div id="map"></div>
+  <div class="grid grid-cols-5 gap-y-1">
+    <div class="col-span-4 flex items-center">
+      <div id="map"></div>
     </div>
-  <div class="col-span-1 flex flex-col justify-center">
-  <div>
-    <div class="radio-group">
-      <input type="radio" id="control_01" name="select" value="points" v-model="selectedValue" checked>
-  <label for="control_01">
-    <h2>Punkte</h2>
-    <p>Diese Darstellung zeigt Ihnen die durchschschnittlichen Punkte, welche Weine aus einem Land erhalten.</p>
-  </label>
-</div>
-<div>
-  <input type="radio" id="control_02" name="select" value="price" v-model="selectedValue">
-  <label for="control_02">
-    <h2>Preis</h2>
-    <p>Diese Darstellung zeigt Ihnen den durchschschnittlichen Preis, welcher für Weine aus den Ländern bezahlt wird.</p>
-  </label>
-</div>
-<div>
-  <input type="radio" id="control_03" name="select" value="sentiment" v-model="selectedValue">
-  <label for="control_03">
-    <h2>Sprache</h2>
-    <p>Diese Darstellung zeigt Ihnen wie positiv oder negativ die Sprache der Reviews zu Weinen aus den Ländern ausfällt.</p>
-  </label>
+    <div class="col-span-1 flex flex-col justify-center">
+      <div>
+        <div class="radio-group">
+          <input
+            type="radio"
+            id="control_01"
+            name="select"
+            value="points"
+            v-model="selectedValue"
+            checked
+          />
+          <label for="control_01">
+            <h2>Punkte</h2>
+            <p>
+              Diese Darstellung zeigt Ihnen die durchschschnittlichen Punkte,
+              welche Weine aus einem Land erhalten.
+            </p>
+          </label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="control_02"
+            name="select"
+            value="price"
+            v-model="selectedValue"
+          />
+          <label for="control_02">
+            <h2>Preis</h2>
+            <p>
+              Diese Darstellung zeigt Ihnen den durchschschnittlichen Preis,
+              welcher für Weine aus den Ländern bezahlt wird.
+            </p>
+          </label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="control_03"
+            name="select"
+            value="sentiment"
+            v-model="selectedValue"
+          />
+          <label for="control_03">
+            <h2>Sprache</h2>
+            <p>
+              Diese Darstellung zeigt Ihnen wie positiv oder negativ die Sprache
+              der Reviews zu Weinen aus den Ländern ausfällt.
+            </p>
+          </label>
+        </div>
+      </div>
     </div>
-  </div>  
-  </div>
   </div>
 </template>
 
@@ -53,10 +81,7 @@ export default {
 
     // Map and projection
     const path = d3.geoPath();
-    const projection = d3
-      .geoMercator()
-      .scale(160)
-      .center([0, 60]);
+    const projection = d3.geoMercator().scale(160).center([0, 60]);
 
     // Load external data and boot
     Promise.all([
@@ -153,7 +178,6 @@ input[type="radio"]:checked + label {
   box-shadow: 0px 0px 20px hsla(0, 54%, 18%, 0.75);
 }
 
-
 .flex {
   display: flex;
 }
@@ -169,5 +193,4 @@ input[type="radio"]:checked + label {
 .justify-center {
   justify-content: center;
 }
-
 </style>
