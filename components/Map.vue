@@ -57,6 +57,7 @@
       </div>
     </div>
   </div>
+  <div class="legend-container"></div>
 </template>
 
 <script>
@@ -70,7 +71,16 @@ export default {
   },
   mounted() {
     var width = 1100;
-    var height = 800;
+    var height = 650;
+
+    var legendWidth = 1000;
+    var legendHeight = 60;
+
+    var legend = d3
+      .select(".legend-container")
+      .append("svg")
+      .attr("width", legendWidth)
+      .attr("height", legendHeight);
 
     // The svg
     var svg = d3
@@ -96,6 +106,9 @@ export default {
       let data = loadData[1];
 
       const updateMap = () => {
+        //rm old legend
+        legend.selectAll("*").remove();
+
         // Create a map from country code to selected data value
         let dataByCountry = new Map(
           data.map((d) => [d.country, +d[this.selectedValue]])
@@ -129,6 +142,36 @@ export default {
           })
           .attr("stroke", "white")
           .attr("stroke-width", 0.5);
+
+        //draw legend
+        const legendRectSize = legendWidth / colorScaleDomain.length;
+
+        var legendGroup = legend
+          .selectAll("g")
+          .data(colorScaleDomain)
+          .enter()
+          .append("g")
+          .attr("transform", function (d, i) {
+            return "translate(" + i * legendRectSize + ", 0)";
+          });
+        legendGroup
+          .append("rect")
+          .attr("x", 0)
+          .attr("y", 10)
+          .attr("width", legendRectSize)
+          .attr("height", 20)
+          .style("fill", function (d) {
+            return colorScale(d);
+          });
+        legendGroup
+          .append("text")
+          .attr("x", legendRectSize / 2)
+          .attr("y", 40)
+          .attr("text-anchor", "middle")
+          .attr("dy", "0.5em") // Adjust the value to add margin between legend and text
+          .text(function (d) {
+            return d;
+          });
       };
 
       updateMap();
