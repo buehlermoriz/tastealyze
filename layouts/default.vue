@@ -1,7 +1,7 @@
 <template>
     <div>
         <!------------------------ NAVBAR---------------------->
-        <header>
+     <!--    <header>
     <nav class="bg-white shadow">
         <div class="container mx-auto px-6 py-5 ">
             <div class="md:flex md:items-center md:justify-between">
@@ -11,7 +11,7 @@
                         
                     </div>
 
-                    <!-- Mobile menu button -->
+                    Mobile menu button 
                     <div class="flex md:hidden">
                         <button type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
                             <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
 
-                 <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                 Mobile Menu open: "block", Menu closed: "hidden" 
                 <div class="hidden -mx-4 md:flex md:items-center">
                     <a href="#" class="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-blue-600">Allgemeine Informationen</a>
                     <a href="#" class="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-blue-600">Rotwein</a>
@@ -31,7 +31,7 @@
             </div>
         </div>
     </nav>
-</header>
+</header> -->
         <slot />
     </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
 <!-- Wordcloud-->
-<div class="wordcloud pt-8">
+<div id="wordcloud" class="wordcloud pt-8">
     <vue-word-cloud
       style="
         height: 576px;

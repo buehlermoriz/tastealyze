@@ -1,6 +1,7 @@
 <template>
 <NuxtLayout>
   <head_hero />
+  <Introduction />
   <sidebar />
   <div class="grid grid-cols-5 gap-y-1"> 
   <div class="some-class"></div>
