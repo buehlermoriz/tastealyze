@@ -16,12 +16,11 @@
       </svg>
       <!-- Sidebar content -->
       
-      <div class="z-10 flex flex-col flex-1" style="padding-top: 15px;">
-        <div class="flex items-center justify-between flex-shrink-0 w-64 p-4">
-          <!-- Logo -->
-          <a href="#"> </a>
+      <div class="z-10 flex flex-col flex-1" style="padding-top: 15px; ">
+        <div class="flex items-center justify-between flex-shrink-0 w-64 p-4 px-12	">
+          <img class="block h-14 w-auto " src="../assets/tastealyze-logo.png" alt="tastealyze" />
+                    <a href="#"> </a>
         </div>
-        
         <nav class="flex flex-col flex-1 w-64 p-4 mt-4">
           <a href="#" class="flex items-center space-x-2">
                         
