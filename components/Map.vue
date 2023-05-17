@@ -15,7 +15,7 @@
             checked
           />
           <label for="control_01">
-            <h2>Punkte</h2>
+            <h2 class="font-bold uppercase">Punkte</h2>
             <p>
               Diese Darstellung zeigt Ihnen die durchschschnittlichen Punkte,
               welche Weine aus einem Land erhalten.
@@ -31,7 +31,7 @@
             v-model="selectedValue"
           />
           <label for="control_02">
-            <h2>Preis</h2>
+            <h2 class= "font-bold uppercase">Preis</h2>
             <p>
               Diese Darstellung zeigt Ihnen den durchschschnittlichen Preis,
               welcher für Weine aus den Ländern bezahlt wird.
@@ -47,7 +47,7 @@
             v-model="selectedValue"
           />
           <label for="control_03">
-            <h2>Sprache</h2>
+            <h2 class= "font-bold uppercase">Sprache</h2>
             <p>
               Diese Darstellung zeigt Ihnen wie positiv oder negativ die Sprache
               der Reviews zu Weinen aus den Ländern ausfällt.
