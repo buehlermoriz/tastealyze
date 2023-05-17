@@ -4,7 +4,7 @@
     <vue-word-cloud
       style="
         height: 576px;
-        width: 1024px;
+        width: 600px;
       "
       :words=keywords
       :color="([, weight]) => weight > 0.4 ? '#7C0A02' : weight > 0.2 ? '#c4c0b9' : '#7e6c65'"
