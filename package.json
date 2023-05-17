@@ -24,6 +24,7 @@
     "d3-geo": "^3.1.0",
     "fs": "^0.0.1-security",
     "nuxt-vuefire": "^0.1.6",
+    "swiper": "^9.3.1",
     "tailwind": "^4.0.0",
     "topojson": "^3.0.2",
     "vue-head": "^2.2.0",
