@@ -2,6 +2,11 @@
   <div class="grid grid-cols-5 gap-y-1">
     <div class="col-span-4 flex items-center">
       <div id="map"></div>
+          <!-- Tooltip -->
+    <div class="tooltip" v-if="tooltipVisible" :style="{ top: tooltipPosition.y + 'px', left: tooltipPosition.x + 'px' }">
+      <p>{{ tooltipCountry }}</p>
+      <p>{{ tooltipValue }}</p>
+    </div>
     </div>
     <div class="col-span-1 flex flex-col justify-center">
       <div>
@@ -67,6 +72,13 @@ export default {
   data() {
     return {
       selectedValue: "points",
+      tooltipVisible: false,
+      tooltipPosition: {
+        x: 0,
+        y: 0,
+      },
+      tooltipCountry: '',
+      tooltipValue: '',
     };
   },
   mounted() {
@@ -141,7 +153,24 @@ export default {
             return colorScale(value);
           })
           .attr("stroke", "white")
-          .attr("stroke-width", 0.5);
+          .attr("stroke-width", 0.5)
+          .on("mouseover", (event, d) => {
+            const [x, y] = d3.pointer(event);
+            const country = d.properties.name;
+            const value = dataByCountry.get(country) || 0;
+
+            this.tooltipCountry = country;
+            this.tooltipValue = value;
+            this.tooltipPosition = {
+              x,
+              y,
+            };
+            this.tooltipVisible = true;
+          })
+    .on("mouseout", () => {
+      this.tooltipVisible = false;
+    });
+
 
         //draw legend
         const legendRectSize = legendWidth / colorScaleDomain.length;
@@ -236,4 +265,5 @@ input[type="radio"]:checked + label {
 .justify-center {
   justify-content: center;
 }
+
 </style>
