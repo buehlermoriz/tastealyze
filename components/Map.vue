@@ -1,12 +1,27 @@
 <template>
+  <!-- Tooltip -->
+  <div class="grid grid-cols-5 gap-y-1">
+    <div class="col-span-4 flex items-center">
+  <div class="tooltip">
+    <h2 class="headline">{{ tooltipCountry }}</h2>
+    <div class="tooltip-box">
+      durchschnittliche Bewertung
+  <p class="tooltip-nr">{{ tooltipPoints }}</p>
+</div>
+<div class="tooltip-box">
+  durchschnittlicher Preis
+  <p class="tooltip-nr">{{ tooltipPrice }}</p>
+</div>
+<div class="tooltip-box">
+  durchschnittliche Sprachlage
+  <p class="tooltip-nr">{{ tooltipLanguage }}</p>
+</div>
+  </div>
+  </div>
+  </div>
   <div class="grid grid-cols-5 gap-y-1">
     <div class="col-span-4 flex items-center">
       <div id="map"></div>
-          <!-- Tooltip -->
-    <div class="tooltip" v-if="tooltipVisible" :style="{ top: tooltipPosition.y + 'px', left: tooltipPosition.x + 'px' }">
-      <p>{{ tooltipCountry }}</p>
-      <p>{{ tooltipValue }}</p>
-    </div>
     </div>
     <div class="col-span-1 flex flex-col justify-center">
       <div>
@@ -36,7 +51,7 @@
             v-model="selectedValue"
           />
           <label for="control_02">
-            <h2 class= "font-bold uppercase">Preis</h2>
+            <h2 class="font-bold uppercase">Preis</h2>
             <p>
               Diese Darstellung zeigt Ihnen den durchschschnittlichen Preis,
               welcher für Weine aus den Ländern bezahlt wird.
@@ -52,7 +67,7 @@
             v-model="selectedValue"
           />
           <label for="control_03">
-            <h2 class= "font-bold uppercase">Sprache</h2>
+            <h2 class="font-bold uppercase">Sprache</h2>
             <p>
               Diese Darstellung zeigt Ihnen wie positiv oder negativ die Sprache
               der Reviews zu Weinen aus den Ländern ausfällt.
@@ -72,13 +87,15 @@ export default {
   data() {
     return {
       selectedValue: "points",
-      tooltipVisible: false,
       tooltipPosition: {
         x: 0,
         y: 0,
       },
-      tooltipCountry: '',
-      tooltipValue: '',
+      tooltipCountry: "zum auswählen hovern",
+      tooltipPoints: "0",
+      tooltipPrice: "0",
+      tooltipLanguage: "0",
+      tooltipValue: "0",
     };
   },
   mounted() {
@@ -125,7 +142,15 @@ export default {
         let dataByCountry = new Map(
           data.map((d) => [d.country, +d[this.selectedValue]])
         );
-
+        let dataBypoints = new Map(
+          data.map((d) => [d.country, +d.points])
+        );
+        let dataByprice = new Map(
+          data.map((d) => [d.country, +d.price])
+        );
+        let dataBysentiment = new Map(
+          data.map((d) => [d.country, +d.sentiment])
+        );
         // set different Color colors depending on user selection
         let colorScaleDomain;
         if (this.selectedValue === "points") {
@@ -150,6 +175,7 @@ export default {
           .attr("d", d3.geoPath().projection(projection))
           .attr("fill", function (d) {
             let value = dataByCountry.get(d.properties.name) || 0;
+
             return colorScale(value);
           })
           .attr("stroke", "white")
@@ -157,20 +183,24 @@ export default {
           .on("mouseover", (event, d) => {
             const [x, y] = d3.pointer(event);
             const country = d.properties.name;
-            const value = dataByCountry.get(country) || 0;
+            const value = (dataByCountry.get(country) || 0).toFixed(2);
+            const points = (dataBypoints.get(country) || 0).toFixed(2);
+            const price = (dataByprice.get(country) || 0).toFixed(2);
+            const sentiment = (dataBysentiment.get(country) || 0).toFixed(2);
 
             this.tooltipCountry = country;
             this.tooltipValue = value;
+            this.tooltipPoints = points;
+            this.tooltipLanguage = price;
+            this.tooltipPrice = sentiment;
             this.tooltipPosition = {
               x,
               y,
             };
-            this.tooltipVisible = true;
           })
-    .on("mouseout", () => {
-      this.tooltipVisible = false;
-    });
-
+          .on("mouseout", () => {
+            this.tooltipCountry = "zum auswählen hovern";
+          });
 
         //draw legend
         const legendRectSize = legendWidth / colorScaleDomain.length;
@@ -265,5 +295,27 @@ input[type="radio"]:checked + label {
 .justify-center {
   justify-content: center;
 }
-
+.tooltip-box {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+  margin-right: 10px;
+}
+.tooltip-nr {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+.headline{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1;
+    font-size: 4rem;
+    font-weight: bold;
+}
 </style>
