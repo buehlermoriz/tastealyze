@@ -28,7 +28,7 @@ export default {
 
       // Read data
       d3.csv(
-        "https://raw.githubusercontent.com/buehlermoriz/tastealyze/treemap/assets/treemap.csv"
+        "https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/treemap.csv"
       ).then(function (data) {
         // stratify the data: reformatting for d3.js
         const root = d3
