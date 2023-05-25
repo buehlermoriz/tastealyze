@@ -29,12 +29,12 @@ export default {
   mounted() {
     if (this.color === 'red') {
       this.color_scheme = ([, weight]) =>
-        weight > 0.4 ? '#7C0A02' : weight > 0.2 ? '#c4c0b9' : '#7e6c65';
+        weight > 0.4 ? '#800000' : weight > 0.2 ? '#B80F0A' : '#555555';
     }
 
     if (this.color === 'green') {
       this.color_scheme = ([, weight]) =>
-        weight > 0.4 ? '#000000' : weight > 0.2 ? '#AEAEAE' : '#555555';
+        weight > 0.4 ? '#0f4336' : weight > 0.2 ? '#556B2F' : '#555555';
     }
   },
   props: ['keywords', 'color'],

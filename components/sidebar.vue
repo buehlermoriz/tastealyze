@@ -137,3 +137,10 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+
+.nuxt-link-active {
+  font-weight: bold;
+}
+</style>
