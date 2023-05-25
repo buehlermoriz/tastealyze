@@ -6,8 +6,11 @@
         <p id="description">
           "Lisa" sucht als nächstes nach einer passenden Flasche Wein. Doch was
           steht eigentlich auf einer guten Flasche Wein? Die hier dargestellte
-          Grafik zeigt die 40 besten Begriffe, welche laut den ausgewerteten
+          Grafik zeigt die 30 beliebtesten Begriffe, welche laut den ausgewerteten
           Reviews auf einem Etikett stehen können.
+          <span class="disclosure">
+            <br><br> Für die Darstellung wurden nur die 120 Begriffe, welche am häufigsten auf Weinetiketten vorkommen ausgewertet, um keine Namen einzelner (herausragender) Weine zu verwenden. Darüber hinaus wurden Füllwörter und Rebsorten aussortiert.
+          </span>
         </p>
       </div>
       <div class="col-span-4">
@@ -36,5 +39,10 @@
   line-height: 1;
   font-size: 4rem;
   font-weight: bold;
+}
+.disclosure{
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #6e7b90;
 }
 </style>
