@@ -7,6 +7,7 @@
  <clouds />
 
 <MapWrapper />
+<Treemap />
   </NuxtLayout>
 
 
