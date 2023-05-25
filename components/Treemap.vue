@@ -9,13 +9,18 @@ export default {
   data() {
     return {};
   },
-  props: ["url"],
+  props: {
+    url: {
+      type: String,
+      required: true,
+    },
+  },
   mounted() {
     const generate = () => {
       // set the dimensions and margins of the graph
       const margin = { top: 10, right: 10, bottom: 10, left: 10 },
         width = 890 - margin.left - margin.right,
-        height = 445 - margin.top - margin.bottom;
+        height = 600 - margin.top - margin.bottom;
 
       // append the svg object to the body of the page
       const svg = d3
@@ -41,7 +46,7 @@ export default {
           data
         );
         root.sum(function (d) {
-          return +d.count;
+          return +d.normalized_col;
         }); // Compute the numeric value for each entity
 
         // Then d3.treemap computes the position of each element of the hierarchy
@@ -81,7 +86,7 @@ export default {
           .text(function (d) {
             return d.data.keyword;
           })
-          .attr("font-size", "15px")
+          .attr("font-size", "13px")
           .attr("fill", "white");
       });
     };
