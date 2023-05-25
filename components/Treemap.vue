@@ -9,8 +9,8 @@ export default {
   data() {
     return {};
   },
+  props: ["url"],
   mounted() {
-
     const generate = () => {
       // set the dimensions and margins of the graph
       const margin = { top: 10, right: 10, bottom: 10, left: 10 },
@@ -27,9 +27,7 @@ export default {
         .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
       // Read data
-      d3.csv(
-        "https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/treemap_data.csv"
-      ).then(function (data) {
+      d3.csv(this.url).then(function (data) {
         // stratify the data: reformatting for d3.js
         const root = d3
           .stratify()
@@ -67,8 +65,7 @@ export default {
           .attr("height", function (d) {
             return d.y1 - d.y0;
           })
-          .style("stroke", "black")
-          .style("fill", "#69b3a2");
+          .style("fill", "#f87171");
 
         // and to add the text labels
         svg

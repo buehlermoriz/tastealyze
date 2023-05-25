@@ -7,7 +7,8 @@
  <clouds />
 
 <MapWrapper />
-<Treemap />
+<Treemap url="https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/treemap_data.csv"/>
+<Treemap url="https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/treemap_points.csv"/>
   </NuxtLayout>
 
 
