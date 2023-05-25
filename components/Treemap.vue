@@ -28,7 +28,7 @@ export default {
 
       // Read data
       d3.csv(
-        "https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/treemap.csv"
+        "https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/treemap_data.csv"
       ).then(function (data) {
         // stratify the data: reformatting for d3.js
         const root = d3
@@ -82,7 +82,7 @@ export default {
             return d.y0 + 20;
           }) // +20 to adjust position (lower)
           .text(function (d) {
-            return d.data.name;
+            return d.data.keyword;
           })
           .attr("font-size", "15px")
           .attr("fill", "white");
