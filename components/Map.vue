@@ -2,22 +2,26 @@
   <!-- Tooltip -->
   <div class="grid grid-cols-5 gap-y-1">
     <div class="col-span-4 flex items-center">
-  <div class="tooltip">
-    <h2 class="headline">{{ tooltipCountry }}</h2>
-    <div class="tooltip-box">
-      durchschnittliche Bewertung
-  <p class="tooltip-nr">{{ tooltipPoints }}</p>
-</div>
-<div class="tooltip-box">
-  durchschnittlicher Preis
-  <p class="tooltip-nr">{{ tooltipPrice }}</p>
-</div>
-<div class="tooltip-box">
-  durchschnittliche Sprachlage
-  <p class="tooltip-nr">{{ tooltipLanguage }}</p>
-</div>
-  </div>
-  </div>
+      <div class="tooltip">
+        <h2 class="headline">{{ tooltipCountry }}</h2>
+        <div class="tooltip-box">
+          durchschnittliche Bewertung
+          <p class="tooltip-nr">{{ tooltipPoints }}</p>
+        </div>
+        <!-- <div class="tooltip-box">
+          {{ tooltipCountry }}
+          <img class="block h-14 w-auto" :src="'../assets/Flags/'"+tooltipCountry + "'.gif'" alt="tastealyze" />
+        </div> -->
+        <div class="tooltip-box">
+          durchschnittlicher Preis
+          <p class="tooltip-nr">{{ tooltipPrice }}</p>
+        </div>
+        <div class="tooltip-box">
+          durchschnittliche Sprachlage
+          <p class="tooltip-nr">{{ tooltipLanguage }}</p>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="grid grid-cols-5 gap-y-1">
     <div class="col-span-4 flex items-center">
@@ -142,12 +146,8 @@ export default {
         let dataByCountry = new Map(
           data.map((d) => [d.country, +d[this.selectedValue]])
         );
-        let dataBypoints = new Map(
-          data.map((d) => [d.country, +d.points])
-        );
-        let dataByprice = new Map(
-          data.map((d) => [d.country, +d.price])
-        );
+        let dataBypoints = new Map(data.map((d) => [d.country, +d.points]));
+        let dataByprice = new Map(data.map((d) => [d.country, +d.price]));
         let dataBysentiment = new Map(
           data.map((d) => [d.country, +d.sentiment])
         );
@@ -191,15 +191,19 @@ export default {
             this.tooltipCountry = country;
             this.tooltipValue = value;
             this.tooltipPoints = points;
-            this.tooltipLanguage = price;
-            this.tooltipPrice = sentiment;
+            this.tooltipLanguage = sentiment;
+            this.tooltipPrice = price;
             this.tooltipPosition = {
               x,
               y,
             };
           })
           .on("mouseout", () => {
-            this.tooltipCountry = "zum auswählen hovern";
+            (this.tooltipCountry = "zum auswählen hovern"),
+              (this.tooltipPoints = "0"),
+              (this.tooltipPrice = "0"),
+              (this.tooltipLanguage = "0"),
+              (this.tooltipValue = "0");
           });
 
         //draw legend
@@ -303,19 +307,19 @@ input[type="radio"]:checked + label {
   margin-right: 10px;
 }
 .tooltip-nr {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    line-height: 1;
-    font-size: 4rem;
-    font-weight: bold;
-    color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 1;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
 }
-.headline{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    line-height: 1;
-    font-size: 4rem;
-    font-weight: bold;
+.headline {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 1;
+  font-size: 4rem;
+  font-weight: bold;
 }
 </style>
