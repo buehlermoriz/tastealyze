@@ -7,7 +7,11 @@
  <clouds />
 
 <MapWrapper />
+<<<<<<< Updated upstream
 <Treemap />
+=======
+<TreemapWrapper />
+>>>>>>> Stashed changes
   </NuxtLayout>
 
 
