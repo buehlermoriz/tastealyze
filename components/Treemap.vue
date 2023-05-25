@@ -46,7 +46,7 @@ export default {
           data
         );
         root.sum(function (d) {
-          return +d.count;
+          return +d.normalized_col;
         }); // Compute the numeric value for each entity
 
         // Then d3.treemap computes the position of each element of the hierarchy
