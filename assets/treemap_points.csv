@@ -1,6 +1,6 @@
 keyword,count,avg_points,normalized_col,parent,tooltip
 Origin,,,,,
-Cru,2275,0.5738461538461539,1.0,Origin,In Frankreich werden offiziell als hochwertig eingestufte Weinberge Crus genannt. Als besonders edel gilt eine Lage, wenn der von dort stammende Wein (vin de cru) das Terroir in typischer Weise verkörpert.
+Cru,2275,0.5738461538461539,1.0,Origin,In Frankreich werden offiziell als hochwertig eingestufte Weinberge Crus genannt. Als besonders edel gilt eine Lage &#44 wenn der von dort stammende Wein (vin de cru) das Terroir in typischer Weise verkörpert.
 Premier,1300,0.5580384615384616,0.8845505617977529,Origin,Premier bezieht sich auf den ersten Rang oder die höchste Qualität eines Weins, oft verwendet, um die Spitzenweine eines Weinguts oder einer Region zu kennzeichnen.
 sample,406,0.5529556650246306,0.8474290142248296,Origin,Ein Sample ist eine kleine Menge Wein, die zum Zweck der Verkostung oder Beurteilung verwendet wird.
 Grand,1303,0.5503069838833461,0.8280847137547745,Origin,Grand steht für einen großen oder erhabenen Wein von herausragender Qualität und Raffinesse.

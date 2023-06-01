@@ -138,7 +138,7 @@ export default {
   display: none;
   /* card style */
   position: absolute;
-  background-color: #b9b9b9;
+  background-color: #282828;
   color: white;
   padding: 0.5rem;
   border-radius: 0.5rem;
