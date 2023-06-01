@@ -5,6 +5,7 @@
   <sidebar />
 
  <clouds />
+ <scatter />
 
 <MapWrapper />
 <TreemapWrapper />
