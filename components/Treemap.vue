@@ -1,5 +1,6 @@
 <template>
   <div id="treemap"></div>
+  <p id="tooltipTreemap">{{ tooltip }}</p>
 </template>
 
 <script>
@@ -9,6 +10,7 @@ export default {
   data() {
     return {
       tooltips: [], // Store tooltip data
+      tooltip: "", // Store tooltip
     };
   },
   props: {
@@ -18,6 +20,8 @@ export default {
     },
   },
   mounted() {
+    const self = this;
+
     const generate = () => {
       // set the dimensions and margins of the graph
       const margin = { top: 10, right: 10, bottom: 10, left: 10 },
@@ -50,9 +54,10 @@ export default {
         root.sum(function (d) {
           return +d.normalized_col;
         }); // Compute the numeric value for each entity
+        let tooltipMap = new Map(data.map((d) => [d.keyword, +d.tooltip]));
 
         // Assign tooltip values to tooltips variable
-        this.tooltips = root.leaves().map((d) => d.data.tooltip);
+        self.tooltips = root.leaves().map((d) => d.data.tooltip);
         // Then d3.treemap computes the position of each element of the hierarchy
         // The coordinates are added to the root object above
         d3.treemap().size([width, height]).padding(4)(root);
@@ -76,18 +81,28 @@ export default {
           })
           .style("fill", "#f87171")
           .on("mouseover", function (event, d) {
-    // Show tooltip on mouseover
-    const tooltip = d3.select("#tooltip");
-    tooltip.style("display", "block");
-    tooltip.html(d.data.tooltip) // Use tooltip data
-      .style("left", event.pageX + 10 + "px")
-      .style("top", event.pageY + 10 + "px");
-  })
-  .on("mouseout", function () {
-    // Hide tooltip on mouseout
-    const tooltip = d3.select("#tooltip");
-    tooltip.style("display", "none");
-  });
+            //display tooltip
+            const tooltip = d3.select("#tooltipTreemap");
+            tooltip.style("display", "block");
+            // Show tooltip on mouseover
+            self.tooltip = tooltipMap.get(d.data.keyword) || 0;
+            //coordinates
+            tooltip
+              .style("left", event.pageX + 10 + "px")
+              .style("top", event.pageY + 10 + "px");
+          })
+          .on("mousemove", function (event) {
+            //coordinates
+            const tooltip = d3.select("#tooltipTreemap");
+            tooltip
+              .style("left", event.pageX + 10 + "px")
+              .style("top", event.pageY + 10 + "px");
+          })
+          .on("mouseout", function () {
+            // Hide tooltip on mouseout
+            const tooltip = d3.select("#tooltipTreemap");
+            tooltip.style("display", "none");
+          });
         // and to add the text labels
         svg
           .selectAll("text")
@@ -118,5 +133,18 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+#tooltipTreemap {
+  display: none;
+  /* card style */
+  position: absolute;
+  background-color: #b9b9b9;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  /* box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2); */
+
 }
 </style>
