@@ -54,7 +54,7 @@ export default {
         root.sum(function (d) {
           return +d.normalized_col;
         }); // Compute the numeric value for each entity
-        let tooltipMap = new Map(data.map((d) => [d.keyword, +d.tooltip]));
+        let tooltipMap = new Map(data.map((d) => [d.keyword, d.tooltip]));
 
         // Assign tooltip values to tooltips variable
         self.tooltips = root.leaves().map((d) => d.data.tooltip);
@@ -142,8 +142,7 @@ export default {
   color: white;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  font-size: 1rem;
-  font-weight: 500;
+  max-width: 20%;
   /* box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2); */
 
 }
