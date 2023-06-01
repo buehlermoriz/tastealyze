@@ -7,7 +7,9 @@ import * as d3 from "d3";
 
 export default {
   data() {
-    return {};
+    return {
+      tooltips: [], // Store tooltip data
+    };
   },
   props: {
     url: {
@@ -49,6 +51,8 @@ export default {
           return +d.normalized_col;
         }); // Compute the numeric value for each entity
 
+        // Assign tooltip values to tooltips variable
+        this.tooltips = root.leaves().map((d) => d.data.tooltip);
         // Then d3.treemap computes the position of each element of the hierarchy
         // The coordinates are added to the root object above
         d3.treemap().size([width, height]).padding(4)(root);
@@ -70,8 +74,20 @@ export default {
           .attr("height", function (d) {
             return d.y1 - d.y0;
           })
-          .style("fill", "#f87171");
-
+          .style("fill", "#f87171")
+          .on("mouseover", function (event, d) {
+    // Show tooltip on mouseover
+    const tooltip = d3.select("#tooltip");
+    tooltip.style("display", "block");
+    tooltip.html(d.data.tooltip) // Use tooltip data
+      .style("left", event.pageX + 10 + "px")
+      .style("top", event.pageY + 10 + "px");
+  })
+  .on("mouseout", function () {
+    // Hide tooltip on mouseout
+    const tooltip = d3.select("#tooltip");
+    tooltip.style("display", "none");
+  });
         // and to add the text labels
         svg
           .selectAll("text")
