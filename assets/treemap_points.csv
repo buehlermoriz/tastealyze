@@ -1,32 +1,32 @@
 keyword,count,avg_points,normalized_col,parent,tooltip
 Origin,,,,,
-Cru,2275,0.5738461538461539,1.0,Origin,In Frankreich werden offiziell als hochwertig eingestufte Weinberge Crus genannt. Als besonders edel gilt eine Lage &#44 wenn der von dort stammende Wein (vin de cru) das Terroir in typischer Weise verkörpert.
-Premier,1300,0.5580384615384616,0.8845505617977529,Origin,Premier bezieht sich auf den ersten Rang oder die höchste Qualität eines Weins, oft verwendet, um die Spitzenweine eines Weinguts oder einer Region zu kennzeichnen.
-sample,406,0.5529556650246306,0.8474290142248296,Origin,Ein Sample ist eine kleine Menge Wein, die zum Zweck der Verkostung oder Beurteilung verwendet wird.
-Grand,1303,0.5503069838833461,0.8280847137547745,Origin,Grand steht für einen großen oder erhabenen Wein von herausragender Qualität und Raffinesse.
-Dr.,480,0.501875,0.47436797752808946,Origin, Die Abkürzung "Dr." auf einem Weinetikett bezieht sich oft auf einen Doktortitel des Winzers oder Besitzers des Weinguts.
-Louis,589,0.49770797962648555,0.4439346826653438,Origin, Louis kann der Name eines Weingutbesitzers oder eines berühmten Winzers sein, der für seine qualitativ hochwertigen Weine bekannt ist.
-Blancs,478,0.4964435146443515,0.43469982605425234,Origin,Blancs bezieht sich auf weiße Weine, insbesondere solche, die ausschließlich aus weißen Trauben hergestellt werden.
-Joseph,415,0.49578313253012046,0.42987681061323924,Origin,Joseph kann der Name eines Weingutbesitzers oder eines berühmten Winzers sein, der für seine qualitativ hochwertigen Weine bekannt ist.
-Block,642,0.49236760124610596,0.40493191921313326,Origin,Ein Block bezieht sich auf einen spezifischen Abschnitt oder eine Parzelle eines Weinbergs, der sich durch bestimmte Eigenschaften auszeichnet.
-Vineyard,12063,0.4905952084887673,0.39198747772695214,Origin,Vineyard bedeutet Weinberg oder Rebfläche und bezieht sich auf den Ort, an dem die Trauben für den Wein angebaut werden.
-Riserva,1028,0.4904669260700389,0.39105058365758727,Origin,Riserva ist eine Bezeichnung für einen Wein, der eine längere Reifezeit oder Alterung erfahren hat, um eine höhere Qualität und Komplexität zu erreichen.
-Père,459,0.480718954248366,0.3198575310273923,Origin,Père ist das französische Wort für "Vater" und kann auf einen Weingutbesitzer oder eine Weinfamilie hinweisen, die seit Generationen im Weinbau tätig ist.
-Hill,707,0.47885431400282885,0.30623937193077244,Origin,Hill bedeutet Hügel und bezieht sich auf die Lage eines Weinbergs auf einem erhöhten Gelände, was oft vorteilhafte Bedingungen für den Weinanbau bietet.
-Ridge,533,0.47082551594746713,0.24760208276240037,Origin,Ridge bedeutet Grat oder Kamm und bezieht sich auf die erhöhte geografische Formation, auf der sich ein Weinberg befindet.
-Domaine,4505,0.4666592674805772,0.21717442541994567,Origin,Domaine ist das französische Wort für "Weingut" und bezieht sich auf einen Ort, an dem Trauben angebaut und Wein produziert wird.
-Ranch,1074,0.46452513966480447,0.2015880986755382,Origin,Ranch ist ein Begriff, der in einigen Weinregionen außerhalb Europas verwendet wird und sich auf ein großes Weingut oder eine Weinfarm bezieht.
-Estate,2121,0.46334276284771336,0.19295276237094028,Origin,Estate bezieht sich auf ein Weingut oder Weingut, das sowohl den Weinanbau als auch die Weinherstellung vor Ort betreibt.
-Noir,11840,0.4632939189189189,0.19259603704828418,Origin,Noir bedeutet schwarz und bezieht sich oft auf die Rebsorte Pinot Noir, die für ihre charakteristische dunkle Farbe bekannt ist.
-della,419,0.4619331742243437,0.18265801399801587,Origin,"della" ist das italienische Wort für "von" oder "aus" und wird häufig verwendet, um den Ursprungsort oder das Weingut eines Weins in Italien anzugeben.
-Castello,533,0.4593808630393996,0.164017539051795,Origin,Castello bedeutet Schloss oder Burg und wird oft verwendet, um ein Weingut oder einen Weinberg mit historischer Bedeutung zu kennzeichnen.
-Vignes,630,0.4558730158730159,0.138398430533262,Origin,Vignes ist das französische Wort für "Reben" und wird oft verwendet, um auf die Rebstöcke oder den Weinberg selbst hinzuweisen.
-Single,466,0.45515021459227467,0.13311954477503973,Origin,Single bedeutet einzeln oder einzelner und wird oft verwendet, um einen Wein zu beschreiben, der aus Trauben einer einzigen Sorte oder eines einzigen Weinbergs hergestellt wird.
-Grown,1382,0.4466353111432706,0.0709320476755718,Origin,Grown bedeutet gewachsen oder angebaut und wird verwendet, um anzuzeigen, dass die Trauben für den Wein auf demselben Weingut oder in derselben Weinregion angebaut wurden.
-Tenuta,774,0.44599483204134366,0.06625439131318406,Origin,Tenuta ist das italienische Wort für "Besitz" oder "Anwesen" und wird oft verwendet, um ein Weingut oder einen Weinberg in Italien zu beschreiben.
-Cuvée,1029,0.44402332361516034,0.05185573426802498,Origin,Cuvée bezieht sich auf eine Mischung oder Assemblage von Weinen, die aus verschiedenen Rebsorten oder Jahrgängen hergestellt wird.
-Robert,499,0.443186372745491,0.04574317173673205,Origin,Robert kann der Name eines Weingutbesitzers oder eines berühmten Winzers sein, der für seine qualitativ hochwertigen Weine bekannt ist.
-Creek,586,0.4399317406143345,0.02197338650918452,Origin,Creek bedeutet Bach oder Fluss und kann auf einen Weinberg hinweisen, der sich entlang eines Baches oder Flusses erstreckt oder in der Nähe davon liegt.
-Château,7424,0.4394733297413793,0.018625441931422022,Origin,Château bedeutet Schloss oder Herrenhaus und wird oft verwendet, um ein Weingut oder eine Weinmarke in Frankreich zu kennzeichnen.
-Reserve,2903,0.4388219083706511,0.01386787012273284,Origin,Reserve steht für einen Wein, der eine spezielle Auslese oder Reservierung darstellt, oft mit längerer Reifezeit oder besonderer Sorgfalt hergestellt.
-Brut,3226,0.4386546807191568,0.012646544578111586,Origin,Brut bezieht sich auf eine bestimmte Stufe der Trockenheit bei Schaumweinen wie Champagner und steht für einen eher trockenen Geschmack ohne zusätzlichen Zuckerzusatz.
+Cru,2275,0.5738461538461539,1.0,Origin,"In Frankreich werden offiziell als hochwertig eingestufte Weinberge Crus genannt. Als besonders edel gilt eine Lage, wenn der von dort stammende Wein (vin de cru) das Terroir in typischer Weise verkörpert."
+Premier,1300,0.5580384615384616,0.8845505617977529,Origin,"Premier bezieht sich auf den ersten Rang oder die höchste Qualität eines Weins, oft verwendet, um die Spitzenweine eines Weinguts oder einer Region zu kennzeichnen."
+sample,406,0.5529556650246306,0.8474290142248296,Origin,"Ein Sample ist eine kleine Menge Wein, die zum Zweck der Verkostung oder Beurteilung verwendet wird."
+Grand,1303,0.5503069838833461,0.8280847137547745,Origin,"Grand steht für einen großen oder erhabenen Wein von herausragender Qualität und Raffinesse."
+Dr.,480,0.501875,0.47436797752808946,Origin, "Die Abkürzung "Dr." auf einem Weinetikett bezieht sich oft auf einen Doktortitel des Winzers oder Besitzers des Weinguts."
+Louis,589,0.49770797962648555,0.4439346826653438,Origin, "Louis kann der Name eines Weingutbesitzers oder eines berühmten Winzers sein, der für seine qualitativ hochwertigen Weine bekannt ist."
+Blancs,478,0.4964435146443515,0.43469982605425234,Origin,"Blancs bezieht sich auf weiße Weine, insbesondere solche, die ausschließlich aus weißen Trauben hergestellt werden."
+Joseph,415,0.49578313253012046,0.42987681061323924,Origin,"Joseph kann der Name eines Weingutbesitzers oder eines berühmten Winzers sein, der für seine qualitativ hochwertigen Weine bekannt ist."
+Block,642,0.49236760124610596,0.40493191921313326,Origin,"Ein Block bezieht sich auf einen spezifischen Abschnitt oder eine Parzelle eines Weinbergs, der sich durch bestimmte Eigenschaften auszeichnet."
+Vineyard,12063,0.4905952084887673,0.39198747772695214,Origin,"Vineyard bedeutet Weinberg oder Rebfläche und bezieht sich auf den Ort, an dem die Trauben für den Wein angebaut werden."
+Riserva,1028,0.4904669260700389,0.39105058365758727,Origin,"Riserva ist eine Bezeichnung für einen Wein, der eine längere Reifezeit oder Alterung erfahren hat, um eine höhere Qualität und Komplexität zu erreichen."
+Père,459,0.480718954248366,0.3198575310273923,Origin,"Père ist das französische Wort für "Vater" und kann auf einen Weingutbesitzer oder eine Weinfamilie hinweisen, die seit Generationen im Weinbau tätig ist."
+Hill,707,0.47885431400282885,0.30623937193077244,Origin,"Hill bedeutet Hügel und bezieht sich auf die Lage eines Weinbergs auf einem erhöhten Gelände, was oft vorteilhafte Bedingungen für den Weinanbau bietet."
+Ridge,533,0.47082551594746713,0.24760208276240037,Origin,"Ridge bedeutet Grat oder Kamm und bezieht sich auf die erhöhte geografische Formation, auf der sich ein Weinberg befindet."
+Domaine,4505,0.4666592674805772,0.21717442541994567,Origin,"Domaine ist das französische Wort für "Weingut" und bezieht sich auf einen Ort, an dem Trauben angebaut und Wein produziert wird."
+Ranch,1074,0.46452513966480447,0.2015880986755382,Origin,"Ranch ist ein Begriff, der in einigen Weinregionen außerhalb Europas verwendet wird und sich auf ein großes Weingut oder eine Weinfarm bezieht."
+Estate,2121,0.46334276284771336,0.19295276237094028,Origin,"Estate bezieht sich auf ein Weingut oder Weingut, das sowohl den Weinanbau als auch die Weinherstellung vor Ort betreibt."
+Noir,11840,0.4632939189189189,0.19259603704828418,Origin,"Noir bedeutet schwarz und bezieht sich oft auf die Rebsorte Pinot Noir, die für ihre charakteristische dunkle Farbe bekannt ist."
+della,419,0.4619331742243437,0.18265801399801587,Origin,""della" ist das italienische Wort für "von" oder "aus" und wird häufig verwendet, um den Ursprungsort oder das Weingut eines Weins in Italien anzugeben."
+Castello,533,0.4593808630393996,0.164017539051795,Origin,"Castello bedeutet Schloss oder Burg und wird oft verwendet, um ein Weingut oder einen Weinberg mit historischer Bedeutung zu kennzeichnen."
+Vignes,630,0.4558730158730159,0.138398430533262,Origin,"Vignes ist das französische Wort für "Reben" und wird oft verwendet, um auf die Rebstöcke oder den Weinberg selbst hinzuweisen."
+Single,466,0.45515021459227467,0.13311954477503973,Origin,"Single bedeutet einzeln oder einzelner und wird oft verwendet, um einen Wein zu beschreiben, der aus Trauben einer einzigen Sorte oder eines einzigen Weinbergs hergestellt wird."
+Grown,1382,0.4466353111432706,0.0709320476755718,Origin,"Grown bedeutet gewachsen oder angebaut und wird verwendet, um anzuzeigen, dass die Trauben für den Wein auf demselben Weingut oder in derselben Weinregion angebaut wurden."
+Tenuta,774,0.44599483204134366,0.06625439131318406,Origin,"Tenuta ist das italienische Wort für "Besitz" oder "Anwesen" und wird oft verwendet, um ein Weingut oder einen Weinberg in Italien zu beschreiben."
+Cuvée,1029,0.44402332361516034,0.05185573426802498,Origin,"Cuvée bezieht sich auf eine Mischung oder Assemblage von Weinen, die aus verschiedenen Rebsorten oder Jahrgängen hergestellt wird."
+Robert,499,0.443186372745491,0.04574317173673205,Origin,"Robert kann der Name eines Weingutbesitzers oder eines berühmten Winzers sein, der für seine qualitativ hochwertigen Weine bekannt ist."
+Creek,586,0.4399317406143345,0.02197338650918452,Origin,"Creek bedeutet Bach oder Fluss und kann auf einen Weinberg hinweisen, der sich entlang eines Baches oder Flusses erstreckt oder in der Nähe davon liegt."
+Château,7424,0.4394733297413793,0.018625441931422022,Origin,"Château bedeutet Schloss oder Herrenhaus und wird oft verwendet, um ein Weingut oder eine Weinmarke in Frankreich zu kennzeichnen."
+Reserve,2903,0.4388219083706511,0.01386787012273284,Origin,"Reserve steht für einen Wein, der eine spezielle Auslese oder Reservierung darstellt, oft mit längerer Reifezeit oder besonderer Sorgfalt hergestellt."
+Brut,3226,0.4386546807191568,0.012646544578111586,Origin,"Brut bezieht sich auf eine bestimmte Stufe der Trockenheit bei Schaumweinen wie Champagner und steht für einen eher trockenen Geschmack ohne zusätzlichen Zuckerzusatz."

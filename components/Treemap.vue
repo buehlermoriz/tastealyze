@@ -85,7 +85,7 @@ export default {
             const tooltip = d3.select("#tooltipTreemap");
             tooltip.style("display", "block");
             // Show tooltip on mouseover
-            self.tooltip = tooltipMap.get(d.data.keyword) || 0;
+            self.tooltip = tooltipMap.get(d.data.keyword).replace("&#44;", ",");
             //coordinates
             tooltip
               .style("left", event.pageX + 10 + "px")
