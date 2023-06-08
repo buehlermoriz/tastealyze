@@ -26,7 +26,9 @@
     "nuxt-vuefire": "^0.1.6",
     "tailwind": "^4.0.0",
     "topojson": "^3.0.2",
+    "vue-chartjs": "^5.2.0",
     "vue-head": "^2.2.0",
+    "vue-plotly": "^1.1.0",
     "vuefire": "^3.1.0",
     "vuewordcloud": "^19.0.0",
     "wordcloud": "^1.2.2"
