@@ -1,8 +1,8 @@
 <template>
 <NuxtLayout>
-  <WineSelector />
   <head_hero />
   <Introduction />
+  <WineSelector />
   <sidebar />
 
  <clouds />

@@ -23,7 +23,7 @@ export default {
     wineType: {
       type: String,
       required: true,
-      validator: (value) => ["White", "Red", "Rose"].includes(value),
+      validator: (value) => ["Weißwein", "Rotwein", "Rosewein"].includes(value),
     },},
   data() {
     return {
@@ -39,15 +39,15 @@ export default {
     const radarCanvas = document.getElementById("radar-chart");
     //change the color of the chart according to the wine type
     switch (this.wineType) {
-      case "White":
+      case "Weißwein":
         this.wineColor = "rgba(238, 237, 196, 0.01)";
         this.wineBorderColor = "rgba(238, 237, 196, 0.02)";
         break;
-      case "Red":
+      case "Rotwein":
         this.wineColor = "rgba(248, 113, 113, 0.01)";
         this.wineBorderColor = "rgba(248, 113, 113, 0.02)";
         break;
-      case "Rose":
+      case "Rosewein":
         this.wineColor = "rgba(255, 192, 203, 0.01)";
         this.wineBorderColor = "rgba(255, 192, 203, 0.02)";
         break;
