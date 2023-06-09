@@ -23,7 +23,7 @@ export default {
     wineType: {
       type: String,
       required: true,
-      validator: (value) => ["Weißwein", "Rotwein", "Rosewein"].includes(value),
+      validator: (value) => ["Weißwein", "Rotwein", "Roséwein"].includes(value),
     },},
   data() {
     return {
@@ -47,7 +47,7 @@ export default {
         this.wineColor = "rgba(248, 113, 113, 0.01)";
         this.wineBorderColor = "rgba(248, 113, 113, 0.02)";
         break;
-      case "Rosewein":
+      case "Roséwein":
         this.wineColor = "rgba(255, 192, 203, 0.01)";
         this.wineBorderColor = "rgba(255, 192, 203, 0.02)";
         break;
