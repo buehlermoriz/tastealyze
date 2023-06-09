@@ -1,6 +1,6 @@
 <template>
 <NuxtLayout>
-  <RadarChart wine-type="Rose"/>
+  <WineSelector />
   <head_hero />
   <Introduction />
   <sidebar />
