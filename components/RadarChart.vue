@@ -2,7 +2,7 @@
   <div class="flex justify-center">
     <div class="max-w-2xl">
       <div id="loading" class="min-h-[300px] flex items-center justify-center">
-        <img src="../assets/37267-swirling-wine.gif" autoplay loop class="mx-auto my-auto" />
+        <img :src="loaderPath" autoplay loop class="mx-auto my-auto" />
       </div>
       <canvas id="radar-chart" class="hidden"></canvas>
     </div>
@@ -35,21 +35,26 @@ export default {
     wineBorderColor: "",
     };
   },
+  computed: {
+    loaderPath(){
+      return "/_nuxt/assets/loader/"+this.wineType+".gif"
+    }
+  },
   async mounted() {
     const radarCanvas = document.getElementById("radar-chart");
     //change the color of the chart according to the wine type
     switch (this.wineType) {
       case "Weißwein":
-        this.wineColor = "rgba(238, 237, 196, 0.01)";
-        this.wineBorderColor = "rgba(238, 237, 196, 0.02)";
+        this.wineColor = "rgba(242, 228, 183, 0.01)";
+        this.wineBorderColor = "rgba(242, 228, 183, 0.02)";
         break;
       case "Rotwein":
         this.wineColor = "rgba(248, 113, 113, 0.01)";
         this.wineBorderColor = "rgba(248, 113, 113, 0.02)";
         break;
       case "Roséwein":
-        this.wineColor = "rgba(255, 192, 203, 0.01)";
-        this.wineBorderColor = "rgba(255, 192, 203, 0.02)";
+        this.wineColor = "rgba(244, 165, 158, 0.01)";
+        this.wineBorderColor = "rgba(244, 165, 158, 0.02)";
         break;
     }
     Promise.all([
@@ -84,7 +89,8 @@ export default {
       ];
       this.data.datasets = results;
       //generate Chart
-      const radarChart = new Chart(radarCanvas, {
+      const timeout = setTimeout(() => {
+        const radarChart = new Chart(radarCanvas, {
       type: "radar",
       data: this.data,
       options: {
@@ -97,6 +103,8 @@ export default {
     });
     //hode loading gif
       document.getElementById("loading").style.display = "none";
+      }, 1000);
+
     });
   },
 };
