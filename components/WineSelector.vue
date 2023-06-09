@@ -3,8 +3,8 @@
     <div class="my-8">
       <h1 class="text-5xl font-bold">Unterschiede der Farben</h1>
     </div>
-    <div id="White" class="grid gap-16 grid-cols-9">
-        <div class="col-span-1 flex justify-center">
+    <div  class="grid gap-16 grid-cols-9">
+        <div id="White" class="col-span-1 flex justify-center">
         <!-- img white wine  https://pixabay.com/photos/white-wine-drink-alcohol-bottle-3185546/-->
         <img
           src="../assets/bottles/wine_white.png"
@@ -63,7 +63,7 @@ export default {
 </script>
 <style>
 .active-bottle {
-  transform: scale(1.5);
+  transform: scale(1.6);
   transition: transform 1s ease;
 }
 </style>
