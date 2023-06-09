@@ -54,7 +54,7 @@ export default {
     }
     Promise.all([
       d3.csv(
-        "https://raw.githubusercontent.com/buehlermoriz/tastealyze/radarchart/assets/radar_chart.csv"
+        "https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/radar_chart.csv"
       ),
     ]).then((loadData) => {
       let data = loadData[0];
