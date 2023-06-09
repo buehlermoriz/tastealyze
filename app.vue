@@ -14,8 +14,21 @@
   </div>
    <Map />
    <Swiper />
-   
+   <div>
+    <h1>Slider Example</h1>
+    <Slider />
+  </div>
   </NuxtLayout>
 
 
 </template>
+<script>
+import Slider from '@/components/Slider.vue';
+
+export default {
+  components: {
+    Slider
+  }
+};
+</script>
+
