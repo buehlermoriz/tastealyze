@@ -36,8 +36,8 @@ export default {
     //change the color of the chart according to the wine type
     switch (this.wineType) {
       case "White":
-        this.wineColor = "rgba(240, 240, 240, 0.01)";
-        this.wineBorderColor = "rgba(240, 240, 240, 0.02)";
+        this.wineColor = "rgba(200, 200, 200, 0.01)";
+        this.wineBorderColor = "rgba(200, 200, 200, 0.02)";
         break;
       case "Red":
         this.wineColor = "rgba(248, 113, 113, 0.01)";
