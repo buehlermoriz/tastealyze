@@ -34,7 +34,13 @@
         <div class="col-span-6 mr-5">
           <h2 class="text-2xl mb-5">{{ active }}</h2>
           <p class="mb-5">{{ getText(active) }}</p>
-          <RadarChart :key="active" :wine-type="active" />
+          <GrapeCarousel />
+          <div class="grid gap-5 grid-cols-6">
+            <div class="col-span-1">
+              <button @click="updateGrape('Merlot')">Merlot</button>
+            </div>
+          </div>
+          <RadarChart :key="watchChanges" :wine-type="active" :grape-type="grape" />
         </div>
       </div>
     </div>
@@ -46,6 +52,8 @@ export default {
   data() {
     return {
       active: "Rotwein",
+      grape: "",
+      watchChanges: 0,
       textMap: {
         Rotwein:
           "Rotwein ist bekannt für seine tiefe, rötliche Farbe und seinen komplexen Geschmack. Er wird aus dunklen Trauben hergestellt und durchläuft einen Fermentationsprozess, bei dem die Traubenschalen für eine gewisse Zeit in Kontakt mit dem Saft bleiben. Dadurch erhält der Rotwein seine charakteristische Farbe und seine tanninhaltige Struktur. Die Aromen von Rotwein reichen von dunklen Früchten wie schwarzen Kirschen und Beeren bis hin zu würzigen Noten wie Vanille, Zimt und schwarzen Pfeffer. Der Körper von Rotwein ist in der Regel vollmundig und kann je nach Reifegrad und Herstellungsstil von weich bis kräftig variieren. Rotwein hat oft ein Alterungspotenzial und kann mit der Zeit an Komplexität und Tiefe gewinnen.",
@@ -58,8 +66,20 @@ export default {
     updateActive(id) {
       this.active = id;
     },
+    updateGrape(grape) {
+      this.grape = grape;
+    },
     getText(id) {
       return this.textMap[id] || "";
+    },
+  },
+  //increase watchChanges, to trigger a reload of the radar chart on both variables active and grape
+  watch: {
+    active: function (newActive) {
+      this.watchChanges++;
+    },
+    grape: function (newGrape) {
+      this.watchChanges++;
     },
   },
 };

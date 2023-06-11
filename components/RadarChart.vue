@@ -24,6 +24,11 @@ export default {
       type: String,
       required: true,
       validator: (value) => ["Weißwein", "Rotwein", "Roséwein"].includes(value),
+    },
+    grapeType: {
+      type: String,
+      required: false,
+      default: "",
     },},
   data() {
     return {
@@ -78,7 +83,10 @@ export default {
     ]).then((loadData) => {
       let data = loadData[0];
       const results = data
+      //filter for red, white rosewine
         .filter((entry) => entry.type === this.wineType)
+        //filter optionally for grape type
+        .filter((entry) => this.grapeType === "" || entry.varieties === this.grapeType)
         .map((entry) => ({
           backgroundColor: this.wineColor,
           borderColor: this.wineBorderColor,
