@@ -9,7 +9,6 @@
 <style>
 /* Background Color*/
 .map_wrapper {
-    margin-top: 100px;
     background-color: #fbfbfbfb;
     padding-left: 20%;
     padding-right: 2%;
