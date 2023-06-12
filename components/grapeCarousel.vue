@@ -1,10 +1,10 @@
 <template>
   <Carousel v-bind="settings" :breakpoints="breakpoints">
     <Slide v-for="slide in names" :key="slide">
-      <div class="carousel__item">
+      <div class="carousel__item my-10">
         <div class="flex justify-center">
           <img
-            src="../assets/grapes/pinot-noir.jpg"
+            :src="loaderPath(slide)"
             class="mx-auto my-auto max-h-[100px]"
             @click="emitValue(slide)"
             @mouseenter="handleMouseEnter"
@@ -65,7 +65,28 @@ export default {
       },
     };
   },
+    computed: {
+
+  },
   methods: {
+    loaderPath(slide){
+      if(process.env.NODE_ENV === "development"){
+        return "/_nuxt/assets/grapes/"+slide+".jpg"
+      }
+      //still needs to be done for production
+      // else{
+      //   if(this.wineType === "Roséwein"){
+      //     return "/_nuxt/Rosewein.f57f7c8b.gif"
+      //   }
+      //   else if (this.wineType === "Rotwein"){
+      //     return "/_nuxt/Rotwein.efba7540.gif"
+      //   }
+      //   else{
+      //     return "/_nuxt/Weißwein.1ba14fd2.gif"
+      //   }
+      // }
+      
+    },
     emitValue(value) {
       this.$emit("updateGrape", value);
     },
