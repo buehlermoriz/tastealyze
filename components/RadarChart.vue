@@ -19,6 +19,7 @@ Chart.register(...registerables);
 Chart.register(RadarController, CategoryScale);
 
 export default {
+
     props: {
     wineType: {
       type: String,
@@ -100,7 +101,6 @@ export default {
           ],
           pointRadius: 0,
         }));
-
       this.data.labels = [
         "abv",
         "degree",
@@ -109,7 +109,10 @@ export default {
         "body",
         "tannin",
       ];
+      //set data to variable
       this.data.datasets = results;
+      //emit data to parent component for further use
+      this.$emit("updateData", results);
       //generate Chart
       const timeout = setTimeout(() => {
         const radarChart = new Chart(radarCanvas, {

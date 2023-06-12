@@ -34,12 +34,7 @@
         <div class="col-span-6 mr-5">
           <h2 class="text-2xl mb-5">{{ active }}</h2>
           <p class="mb-5">{{ getText(active) }}</p>
-          <GrapeCarousel />
-          <div class="grid gap-5 grid-cols-6">
-            <div class="col-span-1">
-              <button @click="updateGrape('Merlot')">Merlot</button>
-            </div>
-          </div>
+          <GrapeCarousel @updateGrape="handleUpdateGrape" :key="watchChanges" :wine-type="active" />
           <RadarChart :key="watchChanges" :wine-type="active" :grape-type="grape" />
         </div>
       </div>
@@ -66,11 +61,11 @@ export default {
     updateActive(id) {
       this.active = id;
     },
-    updateGrape(grape) {
-      this.grape = grape;
-    },
     getText(id) {
       return this.textMap[id] || "";
+    },
+    handleUpdateGrape(grape) {
+      this.grape = grape;
     },
   },
   //increase watchChanges, to trigger a reload of the radar chart on both variables active and grape

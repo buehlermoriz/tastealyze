@@ -8,6 +8,7 @@
  <scatter />
 <MapWrapper />
 <TreemapWrapper />
+<Imprint />
   </NuxtLayout>
 
 

@@ -143,7 +143,5 @@ export default {
   padding: 0.5rem;
   border-radius: 0.5rem;
   max-width: 20%;
-  /* box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2); */
-
 }
 </style>

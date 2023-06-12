@@ -52,7 +52,6 @@ var margin = {top: 10, right: 30, bottom: 30, left: 60},
     
     //Read the data from csv in assets folder
     d3.csv("https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/data.csv").then((data1) => {
-        console.log(data1);
 
       // Add X axis with the label "price"
       var x = d3.scaleLinear()
