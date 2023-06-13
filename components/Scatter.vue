@@ -1,7 +1,7 @@
 <template>
   <div id="priceandpoints">
 
-    <div class="grid h-screen place-items-center ">
+    <div class="grid h-screen place-items-center mt-28 mb-28">
       <div>
           <h1 class="headline-map">Price und Punkte</h1>
           

@@ -1,8 +1,8 @@
 <template>
-  <div id="wineselector">
-    <div class="ml-[20%]">
-      <div class="my-8">
-        <h1 class="font-semibold uppercase md:text-5xl font-['Bodoni MT']">
+  <div id="wineselector	">
+    <div class="ml-[20%] 	">
+      <div class=" mt-28 pb-28">
+        <h1 class="font-semibold  uppercase md:text-5xl font-['Bodoni MT']">
           wähle deinen Wein
         </h1>
       </div>
@@ -31,7 +31,8 @@
             @click="updateActive('Roséwein')"
           />
         </div>
-        <div class="col-span-6 mr-5">
+        <div class="col-span-6 mr-5 mb-20	">
+          
           <h2 class="text-2xl mb-5">{{ active }}</h2>
           <p class="mb-5">{{ getText(active) }}</p>
           <GrapeCarousel @updateGrape="handleUpdateGrape" :key="watchChanges" :wine-type="active" />
@@ -88,4 +89,5 @@ export default {
   transform: scale(1.6);
   transition: transform 1s ease;
 }
+
 </style>

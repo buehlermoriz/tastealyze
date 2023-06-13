@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-14 bg-gradient-to-t from-red-100">
+  <div class="pb-14  mt-28 pb-28 bg-gradient-to-t from-red-100">
     <h2 class="pt-16 pb-8 ml-[20%] font-semibold uppercase md:text-5xl font-['Bodoni MT']">
     Wie werden Weine beschrieben?
   </h2>

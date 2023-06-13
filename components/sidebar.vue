@@ -1,5 +1,6 @@
 <template>
   <div class="antialiased text-gray-900 dark:bg-dark dark:text-light">
+    <div class=" mt-28 pb-28"> 
     <!-- Sidebar -->
     <div class="fixed inset-y-0 z-10 flex w-80">
       <!-- Curvy shape -->
@@ -139,6 +140,7 @@
         </nav>
       </div>
     </div>
+  </div>
   </div>
 </template>
 

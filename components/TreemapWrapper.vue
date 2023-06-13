@@ -1,5 +1,5 @@
 <template>
-  <div id="titles" class="Treemap_wrapper">
+  <div id="titles" class="Treemap_wrapper mt-28 pb-28">
     <div class="grid grid-cols-6 gap-y-1">
       <div class="col-span-2">
         <h1 class="headline-treemap">Wie heißt ein guter Wein?</h1>
@@ -24,7 +24,6 @@
 <style>
 /* Background Color*/
 .Treemap_wrapper {
-  margin-top: 100px;
   padding-left: 20%;
   padding-right: 2%;
 }
