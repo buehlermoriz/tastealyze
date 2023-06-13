@@ -1,39 +1,42 @@
 <template>
-  <div class="ml-[20%]">
-    <div class="my-8">
-      <h1 class="font-semibold uppercase md:text-5xl font-['Bodoni MT']">
-        wähle deinen Wein
-      </h1>
-    </div>
-    <div class="grid gap-16 grid-cols-9">
-      <div id="Weißwein" class="col-span-1 flex justify-center">
-        <img
-          src="../assets/bottles/whitewine.png"
-          class="mx-auto my-auto max-h-[300px]"
-          :class="{ 'active-bottle': active === 'Weißwein' }"
-          @click="updateActive('Weißwein')"
-        />
+  <div id="wineselector">
+    <div class="ml-[20%]">
+      <div class="my-8">
+        <h1 class="font-semibold uppercase md:text-5xl font-['Bodoni MT']">
+          wähle deinen Wein
+        </h1>
       </div>
-      <div id="Rotwein" class="col-span-1 flex justify-center">
-        <img
-          src="../assets/bottles/redwine.png"
-          class="mx-auto my-auto max-h-[600px]"
-          :class="{ 'active-bottle': active === 'Rotwein' }"
-          @click="updateActive('Rotwein')"
-        />
-      </div>
-      <div id="Roséwein" class="col-span-1 flex justify-center">
-        <img
-          src="../assets/bottles/rosewine.png"
-          class="mx-auto my-auto max-h-[300px]"
-          :class="{ 'active-bottle': active === 'Roséwein' }"
-          @click="updateActive('Roséwein')"
-        />
-      </div>
-      <div class="col-span-6 mr-5">
-        <h2 class="text-2xl mb-5">{{ active }}</h2>
-        <p class="mb-5">{{ getText(active) }}</p>
-        <RadarChart :key="active" :wine-type="active" />
+      <div class="grid gap-16 grid-cols-9">
+        <div id="Weißwein" class="col-span-1 flex justify-center">
+          <img
+            src="../assets/bottles/whitewine.png"
+            class="mx-auto my-auto max-h-[300px]"
+            :class="{ 'active-bottle': active === 'Weißwein' }"
+            @click="updateActive('Weißwein')"
+          />
+        </div>
+        <div id="Rotwein" class="col-span-1 flex justify-center">
+          <img
+            src="../assets/bottles/redwine.png"
+            class="mx-auto my-auto max-h-[600px]"
+            :class="{ 'active-bottle': active === 'Rotwein' }"
+            @click="updateActive('Rotwein')"
+          />
+        </div>
+        <div id="Roséwein" class="col-span-1 flex justify-center">
+          <img
+            src="../assets/bottles/rosewine.png"
+            class="mx-auto my-auto max-h-[300px]"
+            :class="{ 'active-bottle': active === 'Roséwein' }"
+            @click="updateActive('Roséwein')"
+          />
+        </div>
+        <div class="col-span-6 mr-5">
+          <h2 class="text-2xl mb-5">{{ active }}</h2>
+          <p class="mb-5">{{ getText(active) }}</p>
+          <GrapeCarousel @updateGrape="handleUpdateGrape" :key="watchChanges" :wine-type="active" />
+          <RadarChart @updateData="handleUpdateData" :key="watchChanges" :wine-type="active" :grape-type="grape" :lastData="lastRadarChart" />
+        </div>
       </div>
     </div>
   </div>
@@ -43,7 +46,10 @@
 export default {
   data() {
     return {
+      lastRadarChart: null,
       active: "Rotwein",
+      grape: "",
+      watchChanges: 0,
       textMap: {
         Rotwein:
           "Rotwein ist bekannt für seine tiefe, rötliche Farbe und seinen komplexen Geschmack. Er wird aus dunklen Trauben hergestellt und durchläuft einen Fermentationsprozess, bei dem die Traubenschalen für eine gewisse Zeit in Kontakt mit dem Saft bleiben. Dadurch erhält der Rotwein seine charakteristische Farbe und seine tanninhaltige Struktur. Die Aromen von Rotwein reichen von dunklen Früchten wie schwarzen Kirschen und Beeren bis hin zu würzigen Noten wie Vanille, Zimt und schwarzen Pfeffer. Der Körper von Rotwein ist in der Regel vollmundig und kann je nach Reifegrad und Herstellungsstil von weich bis kräftig variieren. Rotwein hat oft ein Alterungspotenzial und kann mit der Zeit an Komplexität und Tiefe gewinnen.",
@@ -58,6 +64,21 @@ export default {
     },
     getText(id) {
       return this.textMap[id] || "";
+    },
+    handleUpdateGrape(grape) {
+      this.grape = grape;
+    },
+    handleUpdateData(lastRadarChart) {
+      this.lastRadarChart = lastRadarChart;
+    },
+  },
+  //increase watchChanges, to trigger a reload of the radar chart on both variables active and grape
+  watch: {
+    active: function (newActive) {
+      this.watchChanges++;
+    },
+    grape: function (newGrape) {
+      this.watchChanges++;
     },
   },
 };

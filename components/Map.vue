@@ -17,7 +17,7 @@
           <p class="tooltip-nr">{{ tooltipPrice }}</p>
         </div>
         <div class="tooltip-box">
-          durchschnittliche Sprachlage
+          durchschnittliche Tonalität
           <p class="tooltip-nr">{{ tooltipLanguage }}</p>
         </div>
       </div>

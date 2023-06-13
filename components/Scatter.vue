@@ -1,21 +1,24 @@
 <template>
-  <div class="grid h-screen place-items-center ">
-    <div>
-        <h1 class="headline-map">Price und Punkte</h1>
-        
+  <div id="priceandpoints">
 
+    <div class="grid h-screen place-items-center ">
+      <div>
+          <h1 class="headline-map">Price und Punkte</h1>
+          
+  
+          
+          <p id="value-range"></p>
+      </div>
+      <div class="relative p-4">
+        <div class="flex justify-center" id="my_dataviz">
+        <!--y axis-->
+        <p class="text-2xl transform -rotate-90 absolute left-0 self-center mr-3" >Punkte</p>
+        <!--y axis-->
+        <p class="text-2xl transform  absolute bottom-0 self-center mr-3">Preis</p>
+      </div>
+     
         
-        <p id="value-range"></p>
-    </div>
-    <div class="relative p-4">
-      <div class="flex justify-center" id="my_dataviz">
-      <!--y axis-->
-      <p class="text-2xl transform -rotate-90 absolute left-0 self-center mr-3" >Punkte</p>
-      <!--y axis-->
-      <p class="text-2xl transform  absolute bottom-0 self-center mr-3">Preis</p>
-    </div>
-   
-      
+      </div>
     </div>
   </div>
 </template>
@@ -49,7 +52,6 @@ var margin = {top: 10, right: 30, bottom: 30, left: 60},
     
     //Read the data from csv in assets folder
     d3.csv("https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/data.csv").then((data1) => {
-        console.log(data1);
 
       // Add X axis with the label "price"
       var x = d3.scaleLinear()

@@ -1,5 +1,5 @@
 <template>
-  <div class="Treemap_wrapper">
+  <div id="titles" class="Treemap_wrapper">
     <div class="grid grid-cols-6 gap-y-1">
       <div class="col-span-2">
         <h1 class="headline-treemap">Wie heißt ein guter Wein?</h1>

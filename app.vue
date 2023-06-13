@@ -4,12 +4,11 @@
   <Introduction />
   <WineSelector />
   <sidebar />
-
  <clouds />
  <scatter />
-
 <MapWrapper />
 <TreemapWrapper />
+<Imprint />
   </NuxtLayout>
 
 
