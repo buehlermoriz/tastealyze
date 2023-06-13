@@ -9,7 +9,6 @@
   </div>
 </template>
 
-
 <script>
 import { Chart, registerables } from "chart.js";
 import { RadarController, CategoryScale } from "chart.js";
@@ -19,8 +18,7 @@ Chart.register(...registerables);
 Chart.register(RadarController, CategoryScale);
 
 export default {
-
-    props: {
+  props: {
     wineType: {
       type: String,
       required: true,
@@ -30,35 +28,37 @@ export default {
       type: String,
       required: false,
       default: "",
-    },},
+    },
+    lastData: {
+      type: Array,
+      required: false,
+      default: null,
+    },
+  },
   data() {
     return {
       data: {
         labels: [],
         datasets: [],
-    },
-    wineColor: "",
-    wineBorderColor: "",
+      },
+      wineColor: "",
+      wineBorderColor: "",
     };
   },
   computed: {
-    loaderPath(){
-      if(process.env.NODE_ENV === "development"){
-        return "/_nuxt/assets/loader/"+this.wineType+".gif"
-      }
-      else{
-        if(this.wineType === "Roséwein"){
-          return "/_nuxt/Rosewein.f57f7c8b.gif"
-        }
-        else if (this.wineType === "Rotwein"){
-          return "/_nuxt/Rotwein.efba7540.gif"
-        }
-        else{
-          return "/_nuxt/Weißwein.1ba14fd2.gif"
+    loaderPath() {
+      if (process.env.NODE_ENV === "development") {
+        return "/_nuxt/assets/loader/" + this.wineType + ".gif";
+      } else {
+        if (this.wineType === "Roséwein") {
+          return "/_nuxt/Rosewein.f57f7c8b.gif";
+        } else if (this.wineType === "Rotwein") {
+          return "/_nuxt/Rotwein.efba7540.gif";
+        } else {
+          return "/_nuxt/Weißwein.1ba14fd2.gif";
         }
       }
-      
-    }
+    },
   },
   async mounted() {
     const radarCanvas = document.getElementById("radar-chart");
@@ -84,10 +84,12 @@ export default {
     ]).then((loadData) => {
       let data = loadData[0];
       const results = data
-      //filter for red, white rosewine
+        //filter for red, white rosewine
         .filter((entry) => entry.type === this.wineType)
         //filter optionally for grape type
-        .filter((entry) => this.grapeType === "" || entry.varieties === this.grapeType)
+        .filter(
+          (entry) => this.grapeType === "" || entry.varieties === this.grapeType
+        )
         .map((entry) => ({
           backgroundColor: this.wineColor,
           borderColor: this.wineBorderColor,
@@ -110,26 +112,47 @@ export default {
         "tannin",
       ];
       //set data to variable
-      this.data.datasets = results;
+      if (this.lastData !== null) {
+        this.data.datasets = results.concat(this.lastData);
+      }
+      else{
+        this.data.datasets = results;
+      }
       //emit data to parent component for further use
-      this.$emit("updateData", results);
+
+// Calculate the mean for each position in the data arrays
+const dataAverages = results[0].data.map((_, index) => {
+  const sum = results.reduce((total, element) => total + element.data[index], 0);
+  return sum / results.length;
+});
+
+      // Generate a new array with the resulting averages
+      const returnArray = [
+        {
+          backgroundColor: "rgba(50, 50, 50, 0.7)",
+          borderColor: "rgba(50, 50, 50, 0.8)",
+          data: dataAverages,
+          pointRadius: 0,
+        },
+      ];
+
+      this.$emit("updateData", returnArray);
       //generate Chart
       const timeout = setTimeout(() => {
         const radarChart = new Chart(radarCanvas, {
-      type: "radar",
-      data: this.data,
-      options: {
-        plugins: {
-          legend: {
-            display: false,
+          type: "radar",
+          data: this.data,
+          options: {
+            plugins: {
+              legend: {
+                display: false,
+              },
+            },
           },
-        },
-      },
-    });
-    //hode loading gif
-      document.getElementById("loading").style.display = "none";
+        });
+        //hode loading gif
+        document.getElementById("loading").style.display = "none";
       }, 1000);
-
     });
   },
 };

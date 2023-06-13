@@ -35,7 +35,7 @@
           <h2 class="text-2xl mb-5">{{ active }}</h2>
           <p class="mb-5">{{ getText(active) }}</p>
           <GrapeCarousel @updateGrape="handleUpdateGrape" :key="watchChanges" :wine-type="active" />
-          <RadarChart :key="watchChanges" :wine-type="active" :grape-type="grape" />
+          <RadarChart @updateData="handleUpdateData" :key="watchChanges" :wine-type="active" :grape-type="grape" :lastData="lastRadarChart" />
         </div>
       </div>
     </div>
@@ -46,6 +46,7 @@
 export default {
   data() {
     return {
+      lastRadarChart: null,
       active: "Rotwein",
       grape: "",
       watchChanges: 0,
@@ -66,6 +67,9 @@ export default {
     },
     handleUpdateGrape(grape) {
       this.grape = grape;
+    },
+    handleUpdateData(lastRadarChart) {
+      this.lastRadarChart = lastRadarChart;
     },
   },
   //increase watchChanges, to trigger a reload of the radar chart on both variables active and grape
