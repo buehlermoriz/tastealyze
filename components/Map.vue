@@ -175,8 +175,11 @@ export default {
           .attr("d", d3.geoPath().projection(projection))
           .attr("fill", function (d) {
             let value = dataByCountry.get(d.properties.name) || 0;
-
-            return colorScale(value);
+            if (value === 0) {
+              return "#282828";
+            } else {
+              return colorScale(value); 
+            }
           })
           .attr("stroke", "white")
           .attr("stroke-width", 0.5)
