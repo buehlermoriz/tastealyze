@@ -47,17 +47,7 @@ export default {
   },
   computed: {
     loaderPath() {
-      if (process.env.NODE_ENV === "development") {
-        return "/_nuxt/assets/loader/" + this.wineType + ".gif";
-      } else {
-        if (this.wineType === "Roséwein") {
-          return "/_nuxt/Rosewein.f57f7c8b.gif";
-        } else if (this.wineType === "Rotwein") {
-          return "/_nuxt/Rotwein.efba7540.gif";
-        } else {
-          return "/_nuxt/Weißwein.1ba14fd2.gif";
-        }
-      }
+        return "/img/loader/" + this.wineType + ".gif";
     },
   },
   async mounted() {

@@ -70,22 +70,7 @@ export default {
   },
   methods: {
     loaderPath(slide){
-      if(process.env.NODE_ENV === "development"){
-        return "/_nuxt/assets/grapes/"+slide+".jpg"
-      }
-      //still needs to be done for production
-      // else{
-      //   if(this.wineType === "Roséwein"){
-      //     return "/_nuxt/Rosewein.f57f7c8b.gif"
-      //   }
-      //   else if (this.wineType === "Rotwein"){
-      //     return "/_nuxt/Rotwein.efba7540.gif"
-      //   }
-      //   else{
-      //     return "/_nuxt/Weißwein.1ba14fd2.gif"
-      //   }
-      // }
-      
+        return "/img/grapes/"+slide+".jpg"
     },
     emitValue(value) {
       this.$emit("updateGrape", value);
