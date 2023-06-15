@@ -1,26 +1,24 @@
 <template>
-  <div id="priceandpoints">
-
-    <div class="grid h-screen place-items-center mt-28 mb-28">
-      <div>
-          <h1 class="headline-map">Price und Punkte</h1>
-          
-  
-          
-          <p id="value-range"></p>
+<div class="map_wrapper">
+  <div class="grid grid-cols-6 gap-y-1">
+      <div class="col-span-2">
+         <h1 class="headline-treemap">Price und Punkte</h1>
+         <p> "Lisa" ist im Supermarkt und sieht viele Weine, recht daneben sieht sie diese Grafik.
+            Verschiedene Weintester haben Punkte an Weine vergeben, dazu gibt der Markt die Informationen der Preise zusätzlich an, um eine Relation erkennbar zu machen.
+            Diese Grafik zeigt das Billige Weine eine Große diskrepant in der Qualität aufweisen, diese können von gut bis ungenießbar reichen, wobei teurere Weine oft besser bewertet werden.</p>
       </div>
-      <div class="relative p-4">
-        <div class="flex justify-center" id="my_dataviz">
+      <div class="relative p-4 grid grid-cols-3 gap-4 col-span-4 justify-center">
+        <div id="my_dataviz"></div>
         <!--y axis-->
         <p class="text-2xl transform -rotate-90 absolute left-0 self-center mr-3" >Punkte</p>
         <!--y axis-->
-        <p class="text-2xl transform  absolute bottom-0 self-center mr-3">Preis</p>
+        <p class=" text-2xl transform  absolute bottom-0 self-center mr-3 absolute ml-[45%]">Preis (in Euro)</p>
+
       </div>
-     
-        
-      </div>
-    </div>
-  </div>
+   </div>
+</div>
+
+
 </template>
 
 <script>
@@ -52,6 +50,7 @@ var margin = {top: 10, right: 30, bottom: 30, left: 60},
     
     //Read the data from csv in assets folder
     d3.csv("https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/data.csv").then((data1) => {
+        console.log(data1);
 
       // Add X axis with the label "price"
       var x = d3.scaleLinear()
@@ -75,10 +74,12 @@ var margin = {top: 10, right: 30, bottom: 30, left: 60},
         .selectAll("dot")
         .data(data1)
         .enter()
-        .append("circle")
-          .attr("cx", function (d) { return x(d.price); } )
-          .attr("cy", function (d) { return y(d.points); } )
-          .attr("r", 3)
+        .append("rect")
+        .attr("width", 30)
+        .attr("height", 30)
+          .attr("x", function (d) { return x(d.price); } )
+          .attr("y", function (d) { return y(d.points); } )
+          .style("opacity", 0.05)
           .style("fill", "#fb6a4a");
 
     })
