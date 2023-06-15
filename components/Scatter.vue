@@ -2,7 +2,7 @@
 <div class="map_wrapper">
   <div class="grid grid-cols-6 gap-y-1">
       <div class="col-span-2">
-         <h1 class="headline-treemap">Price und Punkte</h1>
+         <h1 class="headline-treemap">Preis und Punkte</h1>
          <p> "Lisa" ist im Supermarkt und sieht viele Weine, recht daneben sieht sie diese Grafik.
             Verschiedene Weintester haben Punkte an Weine vergeben, dazu gibt der Markt die Informationen der Preise zusätzlich an, um eine Relation erkennbar zu machen.
             Diese Grafik zeigt das Billige Weine eine Große diskrepant in der Qualität aufweisen, diese können von gut bis ungenießbar reichen, wobei teurere Weine oft besser bewertet werden.</p>
