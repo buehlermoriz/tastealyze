@@ -1,9 +1,9 @@
 <template>
-  <div class="pb-14  mt-28 pb-28 bg-gradient-to-t from-red-100">
-    <h2 class="pt-16 pb-8 ml-[20%] font-semibold uppercase md:text-5xl font-['Bodoni MT']">
+  <div class=" pb-14  mt-28 pb-28 grid text-center ">
+    <h2 class=" ml-[20%] pt-16 pb-8  font-semibold uppercase md:text-5xl font-['Bodoni MT']">
     Wie werden Weine beschrieben?
   </h2>
-    <p class="pr-8" style="margin-left: 350px; margin-right: 200px">
+    <p class=" ml-[20%] pr-8">
       Bei Weinproben verwenden Tester verschiedene Wörter, um Weine zu
       beschreiben. Dabei gibt es klare Unterschiede in der Wortwahl, je nachdem,
       ob ein Wein als gut oder schlecht bewertet wird. Die Wahl der Wörter

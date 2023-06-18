@@ -20,6 +20,9 @@
       </div>
     </div>
   </div>
+  <TreemapDetail
+    url="https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/treemap_points.csv"
+  />
 </template>
 <style>
 /* Background Color*/
