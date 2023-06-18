@@ -14,16 +14,32 @@
         </p>
       </div>
       <div class="col-span-4">
-        <Treemap
+        <Treemap @treemap_select="handleTreemapSelect"
           url="https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/treemap_points.csv"
         />
+        <TreemapDetail
+    url="https://raw.githubusercontent.com/buehlermoriz/tastealyze/treemap_detail/assets/treemap_detail.json" :keyword="treemap_select" :key="treemap_select"
+  />
       </div>
     </div>
   </div>
-  <TreemapDetail
-    url="https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/treemap_points.csv"
-  />
+
 </template>
+<script>
+export default {
+  data() {
+    return {
+      treemap_select: null,
+    };
+  },
+  methods: {
+    handleTreemapSelect(select) {
+      this.treemap_select = select;
+    },
+  },
+};
+
+</script>
 <style>
 /* Background Color*/
 .Treemap_wrapper {

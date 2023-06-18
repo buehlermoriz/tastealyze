@@ -1,23 +1,21 @@
 <template>
-  <div id="treemap"></div>
-  <p id="tooltipTreemap">{{ tooltip }}</p>
+  <p>{{ keyword }}</p>
+  <div id="treemap_detail"></div>
 </template>
 
 <script>
 import * as d3 from "d3";
 
 export default {
-  data() {
-    return {
-      tooltips: [], // Store tooltip data
-      tooltip: "", // Store tooltip
-    };
-  },
   props: {
     url: {
       type: String,
       required: true,
     },
+    keyword: {
+      type: String,
+      required: false,
+    default: null}
   },
   mounted() {
     const self = this;
@@ -30,7 +28,7 @@ export default {
 
       // append the svg object to the body of the page
       const svg = d3
-        .select("#treemap")
+        .select("#treemap_detail")
         .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
@@ -38,26 +36,13 @@ export default {
         .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
       // Read data
-      d3.csv(this.url).then(function (data) {
+      d3.json(this.url).then(function (data) {
+        // find the data for the keyword
+        data = data["children"].find(item => item.name === self.keyword);
         // stratify the data: reformatting for d3.js
-        const root = d3
-          .stratify()
-          .id(function (d) {
-            return d.keyword;
-          }) // Name of the entity (column name is name in csv)
-          .parentId(function (d) {
-            return d.parent;
-          })(
-          // Name of the parent (column name is parent in csv)
-          data
-        );
-        root.sum(function (d) {
-          return +d.normalized_col;
-        }); // Compute the numeric value for each entity
-        let tooltipMap = new Map(data.map((d) => [d.keyword, d.tooltip]));
-
-        // Assign tooltip values to tooltips variable
-        self.tooltips = root.leaves().map((d) => d.data.tooltip);
+        const root = d3.hierarchy(data)
+      .sum(d => d.value)
+      .sort((a, b) => b.value - a.value);
         // Then d3.treemap computes the position of each element of the hierarchy
         // The coordinates are added to the root object above
         d3.treemap().size([width, height]).padding(4)(root);
@@ -80,29 +65,6 @@ export default {
             return d.y1 - d.y0;
           })
           .style("fill", "#f87171")
-          .on("mouseover", function (event, d) {
-            //display tooltip
-            const tooltip = d3.select("#tooltipTreemap");
-            tooltip.style("display", "block");
-            // Show tooltip on mouseover
-            self.tooltip = tooltipMap.get(d.data.keyword).replace("&#44;", ",");
-            //coordinates
-            tooltip
-              .style("left", event.pageX + 10 + "px")
-              .style("top", event.pageY + 10 + "px");
-          })
-          .on("mousemove", function (event) {
-            //coordinates
-            const tooltip = d3.select("#tooltipTreemap");
-            tooltip
-              .style("left", event.pageX + 10 + "px")
-              .style("top", event.pageY + 10 + "px");
-          })
-          .on("mouseout", function () {
-            // Hide tooltip on mouseout
-            const tooltip = d3.select("#tooltipTreemap");
-            tooltip.style("display", "none");
-          });
         // and to add the text labels
         svg
           .selectAll("text")
@@ -115,33 +77,15 @@ export default {
             return d.y0 + 20;
           }) // +20 to adjust position (lower)
           .text(function (d) {
-            return d.data.keyword;
+            return d.data.name;
           })
           .attr("font-size", "13px")
           .attr("fill", "white");
       });
     };
-    generate();
+    if (this.keyword){
+      generate();
+    }
   },
 };
 </script>
-
-<style>
-/* center treemap */
-#treemap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-#tooltipTreemap {
-  display: none;
-  /* card style */
-  position: absolute;
-  background-color: #282828;
-  color: white;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  max-width: 20%;
-}
-</style>

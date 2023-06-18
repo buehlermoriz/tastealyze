@@ -19,6 +19,11 @@ export default {
       required: true,
     },
   },
+  methods: {
+    emitValue(value) {
+      this.$emit("treemap_select", value);
+    },
+  },
   mounted() {
     const self = this;
 
@@ -102,7 +107,12 @@ export default {
             // Hide tooltip on mouseout
             const tooltip = d3.select("#tooltipTreemap");
             tooltip.style("display", "none");
-          });
+          })
+          .on("click", function (event, d) {
+            // Emit value to parent component
+            self.emitValue(d.data.keyword);
+          })
+
         // and to add the text labels
         svg
           .selectAll("text")
