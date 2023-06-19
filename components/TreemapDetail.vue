@@ -1,6 +1,10 @@
 <template>
-  <p>{{ keyword }}</p>
-  <div id="treemap_detail"></div>
+  <div class="treemap_detail_wrapper">
+    <h2 class="font-semibold uppercase md:text-5xl m-3">{{ keyword }}</h2>
+    <p class="m-3" v-if="keyword">Doch welche Begriffe werden mit dem Keyword <span class="font-semibold"> {{ keyword }} </span>  in Weinnamen häufig kombiniert? Hier die Top 10 der kombinierten Keywords. <br> Über den nachfolgenden Button haben Sie die Möglichkeit zurück zur Übersicht zu gelangen. </p>
+    <button @click="backToOverview" v-if="keyword" type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-3 mb-2">zur Übersicht</button>
+    <div id="treemap_detail"></div>
+  </div>
 </template>
 
 <script>
@@ -15,12 +19,27 @@ export default {
     keyword: {
       type: String,
       required: false,
-    default: null}
+      default: null,
+    },
+  },
+  methods: {
+    backToOverview() {
+      this.$emit("treemap_select", null);
+    },
   },
   mounted() {
     const self = this;
 
     const generate = () => {
+      //remove general Treemap
+      const treemap = d3.select("#treemap");
+      const tooltipTreemap = d3.select("#tooltipTreemap");
+
+      if (!treemap.select("svg").empty()) {
+        treemap.select("svg").remove();
+        tooltipTreemap.style("display", "none");
+      }
+
       // set the dimensions and margins of the graph
       const margin = { top: 10, right: 10, bottom: 10, left: 10 },
         width = 890 - margin.left - margin.right,
@@ -38,11 +57,12 @@ export default {
       // Read data
       d3.json(this.url).then(function (data) {
         // find the data for the keyword
-        data = data["children"].find(item => item.name === self.keyword);
+        data = data["children"].find((item) => item.name === self.keyword);
         // stratify the data: reformatting for d3.js
-        const root = d3.hierarchy(data)
-      .sum(d => d.value)
-      .sort((a, b) => b.value - a.value);
+        const root = d3
+          .hierarchy(data)
+          .sum((d) => d.value)
+          .sort((a, b) => b.value - a.value);
         // Then d3.treemap computes the position of each element of the hierarchy
         // The coordinates are added to the root object above
         d3.treemap().size([width, height]).padding(4)(root);
@@ -64,7 +84,7 @@ export default {
           .attr("height", function (d) {
             return d.y1 - d.y0;
           })
-          .style("fill", "#f87171")
+          .style("fill", "#f87171");
         // and to add the text labels
         svg
           .selectAll("text")
@@ -83,7 +103,7 @@ export default {
           .attr("fill", "white");
       });
     };
-    if (this.keyword){
+    if (this.keyword) {
       generate();
     }
   },

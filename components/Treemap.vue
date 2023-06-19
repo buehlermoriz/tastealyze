@@ -1,4 +1,10 @@
 <template>
+  <div class="general_treemap_wrapper"></div>
+  <div v-if="keyword===null" class="flex m-3 items-center">
+    <img src="../assets/click.gif" />
+    <p class="text-gray-400 italic">Info: Du willst wissen, welche Keywords sich mit den Begriffen gut kombinieren lassen? Klicke doch einfach auf das entsprechende Feld. </p>
+  </div>
+
   <div id="treemap"></div>
   <p id="tooltipTreemap">{{ tooltip }}</p>
 </template>
@@ -17,6 +23,11 @@ export default {
     url: {
       type: String,
       required: true,
+    },
+    keyword: {
+      type: String,
+      required: false,
+      default: null,
     },
   },
   methods: {
@@ -131,8 +142,9 @@ export default {
           .attr("fill", "white");
       });
     };
-    generate();
-  },
+    if (this.keyword== null) {
+      generate();
+    }  },
 };
 </script>
 
