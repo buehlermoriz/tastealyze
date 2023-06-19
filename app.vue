@@ -1,12 +1,12 @@
 <template>
 <NuxtLayout>
   <head_hero />
+  <Story text="Das ist Lisa, sie sucht für heute Abend einen passenden Wein für ihr Date." img="illustration_1" />
+
   <Introduction />
   <Story text="Lisa muss nun die wichtigste Frage bei der Weinsuche beantworten: Welche Sorte Wein soll sie kaufen?" img="illustration_2" />
   <WineSelector />
-  <Story text="Lisa entdeckt eine Vielzahl von Weinflaschen im Regal. Sie ist fasziniert und überrumpelt von der großen Auswahl." img="illustration_3" />
-  <sidebar />
-  <Story text="Lisa schaut nach Informationen auf dem Etikett, um ihre Entscheidung zu treffen." img="illustration_4" />
+  <Story text="Lisa ist fasziniert von der Vielzahl an Weinflaschen im Regal. Sie schaut nach Informationen auf dem Etikett, um ihre Entscheidung zu treffen." img="illustration_4" />
  <clouds />
  <Story text="Lisa überlegt, ob wohl der teurere Wein besser sei oder ihr auch ein etwas Günstigerer reicht." img="illustration_5" />
  <scatter />
@@ -16,6 +16,8 @@
 <Story text="Lisa erfährt durch die App genug Infos über ihre Auswahl." img="illustration_8" />
 <TreemapWrapper />
 <Story text="Lisa genießt mit ihrem Mann abends den Wein. Er schmeckt ihnen durch die gründliche Auswahl hervorragend." img="illustration_9" />
+<sidebar />
+
 <Imprint />
   </NuxtLayout>
 

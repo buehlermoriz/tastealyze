@@ -1,5 +1,5 @@
 <template>
-<div class="map_wrapper">
+<div class="map_wrapper pb-28  pt-28">
   <div class="grid grid-cols-6 gap-y-1">
       <div class="col-span-2">
          <h1 class="headline-treemap">Preis und Punkte</h1>
