@@ -1,12 +1,12 @@
 <template>
   <div id="wineselector	">
-    <div class="md:ml-[20%] 	">
+    <div class="md:ml-[20%] ml-[5%]">
       <div class=" mt-28 pb-28">
-        <h1 class="font-semibold  uppercase md:text-5xl font-['Bodoni MT']">
+        <h1 class="font-semibold  uppercase md:text-5xl text-2xl font-['Bodoni MT']">
           wähle deinen Wein
         </h1>
       </div>
-      <div class="grid gap-16 grid-cols-9">
+      <div class="grid md:gap-16 grid-cols-3 md:grid-cols-9">
         <div id="Weißwein" class="col-span-1 flex justify-center">
           <img
             src="../assets/bottles/whitewine.png"
@@ -31,12 +31,17 @@
             @click="updateActive('Roséwein')"
           />
         </div>
-        <div class="col-span-6 mr-5 mb-20	">
-          
-          <h2 class="text-2xl mb-5">{{ active }}</h2>
-          <p class="mb-5">{{ getText(active) }}</p>
+        <div class="col-span-6 mt-32 md:mt-0 mr-5 mb-20	">
+          <div class="hidden md:block">
+            <h2 class="text-2xl mb-5">{{ active }}</h2>
+            <p class="mb-5">{{ getText(active) }}</p>
+          </div>
           <GrapeCarousel @updateGrape="handleUpdateGrape" :key="watchChanges" :wine-type="active" />
           <RadarChart @updateData="handleUpdateData" :key="watchChanges" :wine-type="active" :grape-type="grape" :lastData="lastRadarChart" />
+          <div class="md:hidden">
+            <h2 class="text-2xl mb-5">{{ active }}</h2>
+            <p class="mb-5">{{ getText(active) }}</p>
+          </div>
         </div>
       </div>
     </div>

@@ -48,13 +48,13 @@ export default {
       isHovered: false,
       // carousel settings
       settings: {
-        itemsToShow: 1,
+        itemsToShow: 3,
         snapAlign: "center",
       },
       breakpoints: {
         // 700px and up
         700: {
-          itemsToShow: 3,
+          itemsToShow: 4,
           snapAlign: "center",
         },
         // 1024 and up
