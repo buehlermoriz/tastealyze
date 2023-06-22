@@ -20,6 +20,18 @@
           href="https://unsplash.com/de/fotos/aK6WGqxyHFw"
           >병의 선택적 초점 사진 von: Hermes Rivera</a
         >
+        <a
+          href="https://images.vivino.com/thumbs/-Clm1KnFTHGrfycgW0eCCg_pb_x960.png"
+          >Rotweinflasche von: Vivino - Cignomoro Primitivo di Manduria 2021</a
+        >
+        <a
+          href="https://images.vivino.com/thumbs/RevBPyEnQ0mJEe1Tbu8Lmg_pb_x960.png"
+          >Weißweinflasche von: Vivino - Cignomoro Primitivo di Manduria 2021</a
+        >
+        <a
+          href="https://images.vivino.com/thumbs/Ki7znlmVT7iu_na3qUqRpw_pb_x960.png"
+          >Roséweinflasche von: Vivino - Cignomoro Primitivo di Manduria 2021</a
+        >
       </div>
       <div class="md:col-span-1 my-3 md:my-0">
         <p>
