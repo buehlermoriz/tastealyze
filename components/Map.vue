@@ -1,34 +1,29 @@
 <template>
   <!-- Tooltip -->
-
-    <div class="grid grid-cols-5 gap-y-1 flex justify-center">
-      <div class="col-span-4 flex items-center">
-        <div class="tooltip text-center">
-          <h2 class="headline">{{ tooltipCountry }}</h2>
-          <div class="tooltip-box">
+    <div class="flex justify-center">
+        <div class="text-center">
+          <h2 class="text-2xl md:text-5xl m-4">{{ tooltipCountry }}</h2>
+          <div class="inline-block px-5 py-2 md:py-5 rounded-md bg-gray-300 m-2">
             durchschnittliche Bewertung
-            <p class="tooltip-nr">{{ tooltipPoints }}</p>
+            <p class="text-center leading-none text-2xl md:text-6xl font-bold text-white">{{ tooltipPoints }}</p>
           </div>
-          <!-- <div class="tooltip-box">
-            {{ tooltipCountry }}
-            <img class="block h-14 w-auto" :src="'../assets/Flags/'"+tooltipCountry + "'.gif'" alt="tastealyze" />
-          </div> -->
-          <div class="tooltip-box">
+          <div class="inline-block px-5 py-2 md:py-5 rounded-md bg-gray-300 m-2">
             durchschnittlicher Preis
-            <p class="tooltip-nr">{{ tooltipPrice }}</p>
+            <p class="text-center leading-none text-2xl md:text-6xl font-bold text-white">{{ tooltipPrice }}</p>
           </div>
-          <div class="tooltip-box">
+          <div class="inline-block px-5 py-2 md:py-5 rounded-md bg-gray-300 m-2">
             durchschnittliche Tonalität
-            <p class="tooltip-nr">{{ tooltipLanguage }}</p>
+            <p class="text-center leading-none text-2xl md:text-6xl font-bold text-white">{{ tooltipLanguage }}</p>
           </div>
         </div>
       </div>
-      </div>
-  <div class="grid grid-cols-5 gap-y-1">
-    <div class="col-span-4 flex items-center">
+  <div class="md:grid md:grid-cols-5 md:gap-y-1">
+    <div class="md:col-span-4 flex items-center">
       <div id="map"></div>
     </div>
-    <div class="col-span-1 flex flex-col justify-center">
+  <div class="legend-container md:hidden"></div>
+
+    <div class="md:col-span-1 flex flex-col justify-center">
       <div>
         <div class="radio-group">
           <input
@@ -82,7 +77,7 @@
       </div>
     </div>
   </div>
-  <div class="legend-container"></div>
+  <div class="legend-container hidden md:block"></div>
 </template>
 
 <script>
@@ -104,11 +99,24 @@ export default {
     };
   },
   mounted() {
-    var width = 1100;
-    var height = 650;
 
-    var legendWidth = 1000;
-    var legendHeight = 60;
+    const screenWidth = window.innerWidth;
+      const isMobile = screenWidth < 768;
+      let width = 500;
+      let height = 500;
+      let legendWidth = 500;
+      let legendHeight = 60;
+      if (isMobile) {
+        width = screenWidth * 0.9;
+        height = width*0.7;
+        legendWidth = screenWidth * 0.9;
+      } else {
+        width = screenWidth * 0.5;
+        height = width*0.7;
+        legendWidth = screenWidth * 0.6;
+      }
+
+
 
     var legend = d3
       .select(".legend-container")
@@ -125,7 +133,13 @@ export default {
 
     // Map and projection
     const path = d3.geoPath();
-    const projection = d3.geoMercator().scale(160).center([0, 60]);
+    var projection
+    if(isMobile){ 
+      projection = d3.geoMercator().scale(60).center([280, -40]);
+    }
+    else{
+      projection = d3.geoMercator().scale(110).center([65, 40]);
+    }
 
     // Load external data and boot
     Promise.all([
@@ -286,44 +300,5 @@ input[type="radio"]:checked + label {
   background: hsla(0, 54%, 18%, 1);
   color: hsla(215, 0%, 100%, 1);
   box-shadow: 0px 0px 20px hsla(0, 54%, 18%, 0.75);
-}
-
-.flex {
-  display: flex;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.justify-center {
-  justify-content: center;
-}
-.tooltip-box {
-  display: inline-block;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #dfdfdf;
-  margin-right: 10px;
-}
-.tooltip-nr {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  line-height: 1;
-  font-size: 4rem;
-  font-weight: bold;
-  color: white;
-}
-.headline {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  line-height: 1;
-  font-size: 4rem;
-  font-weight: bold;
 }
 </style>
