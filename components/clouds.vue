@@ -1,7 +1,7 @@
 <template>
   <div class="pb-14  md:ml-[20%] md:mt-20 md:grid text-center">
     <h2
-      class="mx-[5%]  pt-16 font-semibold uppercase md:text-5xl text-2xl"
+      class="mx-[5%] font-semibold uppercase md:text-5xl text-2xl"
     >
       Wie werden Weine beschrieben?
     </h2>
@@ -17,16 +17,14 @@
       schlechter bewertete Weine beschrieben wurden.
     </p>
     <div class="md:grid md:grid-cols-6 md:gap-y-1 mt-5">
-      <div class="md:col-span-3">
+      <div class="md:col-span-3 my-5">
         <h3 class="font-semibold uppercase text-2xl md:text-3xl">
           Wein <span class="text-red-800">unter </span> 80 Punkte:
         </h3>
         <!-- Wordcloud =80 Points -->
         <Wordcloud :key="componentKey" :color="'red'" :cloudnr="0" :keywords="badWines" />
       </div>
-      <div
-        class="md:col-span-3"
-      >
+      <div class="md:col-span-3 my-5">
         <h3 class="font-semibold uppercase text-2xl md:text-3xl">
           Wein <span class="text-green-900">über </span> 80 Punkte:
         </h3>

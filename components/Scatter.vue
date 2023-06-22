@@ -1,8 +1,8 @@
 <template>
-  <div class="scatter_wrapper pb-28 pt-28 mx-[5%] md:ml-[20%]">
+  <div class="scatter_wrapper pb-28 pt-8 mx-[5%] md:ml-[20%]">
     <div class="md:grid md:grid-cols-6 md:gap-y-1">
       <div class="md:col-span-2">
-        <h1 class="text-2xl md:text-5xl text-bold">Preis und Punkte</h1>
+        <h1 class="text-2xl md:text-5xl font-semibold pb-8">Preis und Punkte</h1>
         <p>
           "Lisa" ist im Supermarkt und sieht viele Weine, recht daneben sieht
           sie diese Grafik. Verschiedene Weintester haben Punkte an Weine
@@ -13,7 +13,7 @@
           bewertet werden.
         </p>
       </div>
-      <div class="p-4 md:col-span-4 justify-center">
+      <div class="mt-5 md:mt-0 md:col-span-4 justify-center">
         <div id="my_dataviz"></div>
       </div>
     </div>
@@ -36,11 +36,11 @@ export default {
       let width = 500;
       let height = 500;
       if (isMobile) {
-        width = screenWidth * 0.9 - margin.left - margin.right;
+        width = screenWidth * 0.8 - margin.left - margin.right;
         height = width - margin.left - margin.right;
       } else {
         width = screenWidth * 0.4 - margin.left - margin.right;
-        height = width - margin.left - margin.right;
+        height = width - margin.top - margin.bottom;
       }
 
     // append the svg object to the body of the page

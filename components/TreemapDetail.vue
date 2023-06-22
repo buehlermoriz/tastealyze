@@ -60,7 +60,7 @@ export default {
         height = width*2 - margin.left - margin.right;
       } else {
         width = screenWidth * 0.4 - margin.left - margin.right;
-        height = width*2 - margin.left - margin.right;
+        height = width - margin.left - margin.right;
       }
 
       // append the svg object to the body of the page

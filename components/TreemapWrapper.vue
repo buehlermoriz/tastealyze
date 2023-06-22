@@ -1,8 +1,8 @@
 <template>
-  <div class="mx-[5%] md:ml[20%] mt-28 pb-28">
+  <div class="mx-[5%] md:ml-[20%] my-8">
     <div class="md:grid md:grid-cols-6 md:gap-y-1">
       <div class="md:col-span-2">
-        <h1 class="text-2xl md:text-5xl">Wie heißt ein guter Wein?</h1>
+        <h1 class="text-2xl md:text-5xl font-semibold mb-5">Wie heißt ein guter Wein?</h1>
         <p>
           "Lisa" sucht als nächstes nach einer passenden Flasche Wein. Doch was
           steht eigentlich auf einer guten Flasche Wein? Die hier dargestellte

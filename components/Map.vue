@@ -107,12 +107,12 @@ export default {
       let legendWidth = 500;
       let legendHeight = 60;
       if (isMobile) {
-        width = screenWidth * 0.9;
-        height = width*0.7;
+        width = 370;
+        height = 260;
         legendWidth = screenWidth * 0.9;
       } else {
-        width = screenWidth * 0.5;
-        height = width*0.7;
+        width = 700;
+        height = 500;
         legendWidth = screenWidth * 0.6;
       }
 
