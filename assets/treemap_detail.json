@@ -2532,59 +2532,59 @@
             ]
         },
         {
-            "name": "Tenuta",
-            "children": [
-                {
+                "name": "Tenuta",
+                "children": [
+                  {
                     "name": "di",
                     "value": 282.0,
-                    "tooltip": "add tooltip"
-                },
-                {
+                    "tooltip": "Herkunft oder aus der Region stammend"
+                  },
+                  {
                     "name": "Red",
                     "value": 121.0,
-                    "tooltip": "add tooltip"
-                },
-                {
+                    "tooltip": "Roter Wein"
+                  },
+                  {
                     "name": "San",
                     "value": 64.0,
-                    "tooltip": "add tooltip"
-                },
-                {
+                    "tooltip": "San [Name eines Ortes oder einer Region]"
+                  },
+                  {
                     "name": "La",
                     "value": 59.0,
-                    "tooltip": "add tooltip"
-                },
-                {
+                    "tooltip": "La [Name eines Ortes oder einer Region]"
+                  },
+                  {
                     "name": "Montalcino",
                     "value": 48.0,
-                    "tooltip": "add tooltip"
-                },
-                {
+                    "tooltip": "Wein aus Montalcino"
+                  },
+                  {
                     "name": "Riserva",
                     "value": 38.0,
-                    "tooltip": "add tooltip"
-                },
-                {
+                    "tooltip": "Riserva Wein (längere Reifung oder spezielle Auswahl)"
+                  },
+                  {
                     "name": "delle",
                     "value": 37.0,
-                    "tooltip": "add tooltip"
-                },
-                {
+                    "tooltip": "Wein aus [Name einer Region]"
+                  },
+                  {
                     "name": "Brunello",
                     "value": 33.0,
-                    "tooltip": "add tooltip"
-                },
-                {
+                    "tooltip": "Brunello Wein (typisch für Montalcino, Toskana)"
+                  },
+                  {
                     "name": "Nero",
                     "value": 32.0,
-                    "tooltip": "add tooltip"
-                },
-                {
+                    "tooltip": "Nero [Name einer Rebsorte oder eines Ortes]"
+                  },
+                  {
                     "name": "Rosso",
                     "value": 31.0,
-                    "tooltip": "add tooltip"
-                }
-            ]
+                    "tooltip": "Rotwein"
+                  }
+                ]
         },
         {
             "name": "Le",
