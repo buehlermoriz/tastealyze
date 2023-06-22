@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-10 text-center text-gray-500 ml-[20%]">
+  <div class="mt-10 text-center text-gray-500 md:ml-[20%]">
     <div class="grid grid-cols-3 gap-y-1">
       <div class="col-span-1">
         <h4 class="text-lg">Impressum:</h4>

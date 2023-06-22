@@ -1,10 +1,10 @@
 <template>
-    <div class="grid grid-cols-6 gap-y-1 pl-[20%] pr-[15%] bg-stone-500		">
+    <div class="grid grid-cols-6 pl-[5%] md:pl-[20%] pr-[5%] bg-stone-500		">
       <div class="col-span-2">
         <img :src="loaderPath" autoplay loop class="illustration" />
       </div>
       <div class="col-span-4 flex">
-        <div class="my-auto text-white font-bold	 italic	text-2xl">
+        <div class="my-auto ml-5 md:ml-0 text-white md:font-bold	 italic text-lg	md:text-2xl">
             {{ text }}
       </div>
       </div>

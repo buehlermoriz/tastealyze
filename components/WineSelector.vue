@@ -1,6 +1,6 @@
 <template>
   <div id="wineselector	">
-    <div class="ml-[20%] 	">
+    <div class="md:ml-[20%] 	">
       <div class=" mt-28 pb-28">
         <h1 class="font-semibold  uppercase md:text-5xl font-['Bodoni MT']">
           wähle deinen Wein
