@@ -1,28 +1,29 @@
 <template>
   <!-- Tooltip -->
-  <div class="grid grid-cols-5 gap-y-1">
-    <div class="col-span-4 flex items-center">
-      <div class="tooltip">
-        <h2 class="headline">{{ tooltipCountry }}</h2>
-        <div class="tooltip-box">
-          durchschnittliche Bewertung
-          <p class="tooltip-nr">{{ tooltipPoints }}</p>
-        </div>
-        <!-- <div class="tooltip-box">
-          {{ tooltipCountry }}
-          <img class="block h-14 w-auto" :src="'../assets/Flags/'"+tooltipCountry + "'.gif'" alt="tastealyze" />
-        </div> -->
-        <div class="tooltip-box">
-          durchschnittlicher Preis
-          <p class="tooltip-nr">{{ tooltipPrice }}</p>
-        </div>
-        <div class="tooltip-box">
-          durchschnittliche Tonalität
-          <p class="tooltip-nr">{{ tooltipLanguage }}</p>
+
+    <div class="grid grid-cols-5 gap-y-1 flex justify-center">
+      <div class="col-span-4 flex items-center">
+        <div class="tooltip text-center">
+          <h2 class="headline">{{ tooltipCountry }}</h2>
+          <div class="tooltip-box">
+            durchschnittliche Bewertung
+            <p class="tooltip-nr">{{ tooltipPoints }}</p>
+          </div>
+          <!-- <div class="tooltip-box">
+            {{ tooltipCountry }}
+            <img class="block h-14 w-auto" :src="'../assets/Flags/'"+tooltipCountry + "'.gif'" alt="tastealyze" />
+          </div> -->
+          <div class="tooltip-box">
+            durchschnittlicher Preis
+            <p class="tooltip-nr">{{ tooltipPrice }}</p>
+          </div>
+          <div class="tooltip-box">
+            durchschnittliche Tonalität
+            <p class="tooltip-nr">{{ tooltipLanguage }}</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+      </div>
   <div class="grid grid-cols-5 gap-y-1">
     <div class="col-span-4 flex items-center">
       <div id="map"></div>

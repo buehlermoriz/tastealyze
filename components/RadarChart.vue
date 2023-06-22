@@ -75,11 +75,8 @@ export default {
       let data = loadData[0];
       const results = data
         //filter for red, white rosewine
-        .filter((entry) => entry.type === this.wineType)
         //filter optionally for grape type
-        .filter(
-          (entry) => this.grapeType === "" || entry.varieties === this.grapeType
-        )
+        .filter((entry) => entry.type === this.wineType&& (this.grapeType === "" || entry.varieties === this.grapeType))
         .map((entry) => ({
           backgroundColor: this.wineColor,
           borderColor: this.wineBorderColor,
@@ -128,7 +125,6 @@ const dataAverages = results[0].data.map((_, index) => {
 
       this.$emit("updateData", returnArray);
       //generate Chart
-      const timeout = setTimeout(() => {
         const radarChart = new Chart(radarCanvas, {
           type: "radar",
           data: this.data,
@@ -142,7 +138,7 @@ const dataAverages = results[0].data.map((_, index) => {
         });
         //hode loading gif
         document.getElementById("loading").style.display = "none";
-      }, 1000);
+   
     });
   },
 };

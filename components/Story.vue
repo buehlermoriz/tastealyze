@@ -1,17 +1,14 @@
 <template>
-  <div class="story_wrapper">
-    <div class="grid grid-cols-6 gap-y-1">
+    <div class="grid grid-cols-6 gap-y-1 pl-[20%] pr-[15%] bg-stone-500		">
       <div class="col-span-2">
         <img :src="loaderPath" autoplay loop class="illustration" />
-        
       </div>
-      <div class="col-span-4">
-        <div class="description">
-        {{ text }}
+      <div class="col-span-4 flex">
+        <div class="my-auto text-white font-bold	 italic	text-2xl">
+            {{ text }}
       </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -34,21 +31,6 @@ export default {
 }
 </script>
 <style>
-/* Background Color*/
-.story_wrapper {
-  padding-left: 20%;
-  padding-right: 2%;
-  background-color: #898381;
-}
-.description {
-  font-weight: 600;
-  font-style: italic;
-  font-size: 15pt;
-  color: #fff;
-  padding-top: 15%;
-  margin-left: 5%;
-  margin-right: 32%;
-}
 .illustration{
   height: 220px;
 }
