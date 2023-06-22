@@ -1,7 +1,7 @@
 <template>
 <NuxtLayout>
   <head_hero />
-  <Story text="Das ist Lisa, sie sucht für heute Abend einen passenden Wein für ihr Date." img="illustration_1" />
+  <Story text="Das ist Lisa, sie sucht für ihr Date heute Abend einen passenden Wein." img="illustration_1" />
 
   <Introduction />
   <Story text="Lisa muss nun die wichtigste Frage bei der Weinsuche beantworten: Welche Sorte Wein soll sie kaufen?" img="illustration_2" />
