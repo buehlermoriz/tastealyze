@@ -4,6 +4,8 @@
     <p class="m-3" v-if="keyword">Doch welche Begriffe werden mit dem Keyword <span class="font-semibold"> {{ keyword }} </span>  in Weinnamen häufig kombiniert? Hier die Top 10 der kombinierten Keywords. <br> Über den nachfolgenden Button haben Sie die Möglichkeit zurück zur Übersicht zu gelangen. </p>
     <button @click="backToOverview" v-if="keyword" type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-3 mb-2">zur Übersicht</button>
     <div id="treemap_detail"></div>
+  <p id="tooltipDetail">{{ tooltip }}</p>
+
   </div>
 </template>
 
@@ -11,6 +13,12 @@
 import * as d3 from "d3";
 
 export default {
+  data() {
+    return {
+      tooltips: [], // Store tooltip data
+      tooltip: "", // Store tooltip
+    };
+  },
   props: {
     url: {
       type: String,
@@ -63,9 +71,12 @@ export default {
           .hierarchy(data)
           .sum((d) => d.value)
           .sort((a, b) => b.value - a.value);
+
         // Then d3.treemap computes the position of each element of the hierarchy
         // The coordinates are added to the root object above
         d3.treemap().size([width, height]).padding(4)(root);
+        let tooltipMap = new Map(data.children.map((d) => [d.name, d.tooltip]));
+        self.tooltips = root.leaves().map((d) => d.data.tooltip);
 
         // use this information to add rectangles:
         svg
@@ -84,8 +95,31 @@ export default {
           .attr("height", function (d) {
             return d.y1 - d.y0;
           })
-          .style("fill", "#f87171");
+          .style("fill", "#f87171")
         // and to add the text labels
+        .on("mouseover", function (event, d) {
+            //display tooltip
+            const tooltip = d3.select("#tooltipDetail");
+            tooltip.style("display", "block");
+            // Show tooltip on mouseover
+            self.tooltip = tooltipMap.get(d.data.keyword);
+            //coordinates
+            tooltip
+              .style("left", event.pageX + 10 + "px")
+              .style("top", event.pageY + 10 + "px");
+          })
+          .on("mousemove", function (event) {
+            //coordinates
+            const tooltip = d3.select("#tooltipDetail");
+            tooltip
+              .style("left", event.pageX + 10 + "px")
+              .style("top", event.pageY + 10 + "px");
+          })
+          .on("mouseout", function () {
+            // Hide tooltip on mouseout
+            const tooltip = d3.select("#tooltipDetail");
+            tooltip.style("display", "none");
+          });
         svg
           .selectAll("text")
           .data(root.leaves())
@@ -109,3 +143,14 @@ export default {
   },
 };
 </script>
+<style>
+#tooltipDetail {
+  display: none;
+  /* card style */
+  position: absolute;
+  background-color: #282828;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  max-width: 20%;
+}</style>

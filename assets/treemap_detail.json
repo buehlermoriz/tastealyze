@@ -6,43 +6,53 @@
             "children": [
                 {
                     "name": "Premier",
-                    "value": 1290.0
+                    "value": 1290.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grand",
-                    "value": 874.0
+                    "value": 874.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Domaine",
-                    "value": 661.0
+                    "value": 661.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 561.0
+                    "value": 561.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Riesling",
-                    "value": 285.0
+                    "value": 285.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Brut",
-                    "value": 270.0
+                    "value": 270.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "et",
-                    "value": 209.0
+                    "value": 209.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "NV",
-                    "value": 208.0
+                    "value": 208.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Père",
-                    "value": 165.0
+                    "value": 165.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 155.0
+                    "value": 155.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -51,43 +61,53 @@
             "children": [
                 {
                     "name": "Cru",
-                    "value": 871.0
+                    "value": 871.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Domaine",
-                    "value": 340.0
+                    "value": 340.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Riesling",
-                    "value": 282.0
+                    "value": 282.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 276.0
+                    "value": 276.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Brut",
-                    "value": 161.0
+                    "value": 161.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 155.0
+                    "value": 155.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Château",
-                    "value": 149.0
+                    "value": 149.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "NV",
-                    "value": 148.0
+                    "value": 148.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Gewurztraminer",
-                    "value": 146.0
+                    "value": 146.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Gris",
-                    "value": 128.0
+                    "value": 128.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -96,43 +116,53 @@
             "children": [
                 {
                     "name": "de",
-                    "value": 511.0
+                    "value": 511.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Blanc",
-                    "value": 342.0
+                    "value": 342.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Brut",
-                    "value": 312.0
+                    "value": 312.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chardonnay",
-                    "value": 312.0
+                    "value": 312.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "NV",
-                    "value": 224.0
+                    "value": 224.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sparkling",
-                    "value": 109.0
+                    "value": 109.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cru",
-                    "value": 90.0
+                    "value": 90.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grand",
-                    "value": 58.0
+                    "value": 58.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Premier",
-                    "value": 28.0
+                    "value": 28.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "et",
-                    "value": 25.0
+                    "value": 25.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -141,43 +171,53 @@
             "children": [
                 {
                     "name": "Domaine",
-                    "value": 164.0
+                    "value": 164.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cru",
-                    "value": 148.0
+                    "value": 148.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grand",
-                    "value": 146.0
+                    "value": 146.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 59.0
+                    "value": 59.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "&",
-                    "value": 23.0
+                    "value": 23.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vignes",
-                    "value": 21.0
+                    "value": 21.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Tardives",
-                    "value": 19.0
+                    "value": 19.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "René",
-                    "value": 19.0
+                    "value": 19.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cave",
-                    "value": 19.0
+                    "value": 19.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Charles",
-                    "value": 17.0
+                    "value": 17.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -186,43 +226,53 @@
             "children": [
                 {
                     "name": "Dr.",
-                    "value": 396.0
+                    "value": 396.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Kabinett",
-                    "value": 342.0
+                    "value": 342.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Spätlese",
-                    "value": 327.0
+                    "value": 327.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 296.0
+                    "value": 296.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cru",
-                    "value": 285.0
+                    "value": 285.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grand",
-                    "value": 282.0
+                    "value": 282.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Domaine",
-                    "value": 280.0
+                    "value": 280.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Trocken",
-                    "value": 257.0
+                    "value": 257.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Dry",
-                    "value": 239.0
+                    "value": 239.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Auslese",
-                    "value": 207.0
+                    "value": 207.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -231,43 +281,53 @@
             "children": [
                 {
                     "name": "Noir",
-                    "value": 8830.0
+                    "value": 8830.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 3709.0
+                    "value": 3709.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Gris",
-                    "value": 815.0
+                    "value": 815.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Estate",
-                    "value": 519.0
+                    "value": 519.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grigio",
-                    "value": 404.0
+                    "value": 404.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reserve",
-                    "value": 361.0
+                    "value": 361.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 353.0
+                    "value": 353.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Blanc",
-                    "value": 331.0
+                    "value": 331.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Domaine",
-                    "value": 317.0
+                    "value": 317.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Ranch",
-                    "value": 279.0
+                    "value": 279.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -276,43 +336,53 @@
             "children": [
                 {
                     "name": "Pinot",
-                    "value": 8814.0
+                    "value": 8814.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 3527.0
+                    "value": 3527.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Estate",
-                    "value": 490.0
+                    "value": 490.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reserve",
-                    "value": 339.0
+                    "value": 339.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 302.0
+                    "value": 302.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "of",
-                    "value": 280.0
+                    "value": 280.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Rosé",
-                    "value": 268.0
+                    "value": 268.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Ranch",
-                    "value": 266.0
+                    "value": 266.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Hill",
-                    "value": 240.0
+                    "value": 240.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Block",
-                    "value": 231.0
+                    "value": 231.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -321,43 +391,53 @@
             "children": [
                 {
                     "name": "NV",
-                    "value": 339.0
+                    "value": 339.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Brut",
-                    "value": 258.0
+                    "value": 258.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sparkling",
-                    "value": 203.0
+                    "value": 203.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 186.0
+                    "value": 186.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 162.0
+                    "value": 162.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Noir",
-                    "value": 145.0
+                    "value": 145.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 116.0
+                    "value": 116.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chardonnay",
-                    "value": 79.0
+                    "value": 79.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Rosé",
-                    "value": 77.0
+                    "value": 77.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Blanc",
-                    "value": 57.0
+                    "value": 57.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -366,43 +446,53 @@
             "children": [
                 {
                     "name": "Cru",
-                    "value": 1290.0
+                    "value": 1290.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Domaine",
-                    "value": 349.0
+                    "value": 349.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 319.0
+                    "value": 319.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "et",
-                    "value": 159.0
+                    "value": 159.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Père",
-                    "value": 139.0
+                    "value": 139.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Brut",
-                    "value": 131.0
+                    "value": 131.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Louis",
-                    "value": 128.0
+                    "value": 128.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "NV",
-                    "value": 101.0
+                    "value": 101.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "des",
-                    "value": 73.0
+                    "value": 73.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "du",
-                    "value": 67.0
+                    "value": 67.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -411,43 +501,53 @@
             "children": [
                 {
                     "name": "Vineyard",
-                    "value": 195.0
+                    "value": 195.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Estate",
-                    "value": 30.0
+                    "value": 30.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Collines",
-                    "value": 27.0
+                    "value": 27.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "K",
-                    "value": 20.0
+                    "value": 20.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Hills",
-                    "value": 20.0
+                    "value": 20.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vine",
-                    "value": 19.0
+                    "value": 19.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reserve",
-                    "value": 18.0
+                    "value": 18.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Family",
-                    "value": 17.0
+                    "value": 17.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reynvaan",
-                    "value": 17.0
+                    "value": 17.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Dusted",
-                    "value": 17.0
+                    "value": 17.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -456,43 +556,53 @@
             "children": [
                 {
                     "name": "Château",
-                    "value": 336.0
+                    "value": 336.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 42.0
+                    "value": 42.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "la",
-                    "value": 41.0
+                    "value": 41.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Clos",
-                    "value": 20.0
+                    "value": 20.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Puisseguin",
-                    "value": 18.0
+                    "value": 18.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grand",
-                    "value": 16.0
+                    "value": 16.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Tour",
-                    "value": 16.0
+                    "value": 16.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Gaffelière",
-                    "value": 12.0
+                    "value": 12.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Le",
-                    "value": 11.0
+                    "value": 11.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Figeac",
-                    "value": 11.0
+                    "value": 11.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -501,43 +611,53 @@
             "children": [
                 {
                     "name": "Veltliner",
-                    "value": 1182.0
+                    "value": 1182.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reserve",
-                    "value": 271.0
+                    "value": 271.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Smaragd",
-                    "value": 84.0
+                    "value": 84.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Federspiel",
-                    "value": 57.0
+                    "value": 57.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reben",
-                    "value": 43.0
+                    "value": 43.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "&",
-                    "value": 37.0
+                    "value": 37.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Markus",
-                    "value": 37.0
+                    "value": 37.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Winzer",
-                    "value": 37.0
+                    "value": 37.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 32.0
+                    "value": 32.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Lage",
-                    "value": 29.0
+                    "value": 29.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -546,43 +666,53 @@
             "children": [
                 {
                     "name": "Bottled",
-                    "value": 115.0
+                    "value": 115.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Brut",
-                    "value": 50.0
+                    "value": 50.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Quinta",
-                    "value": 49.0
+                    "value": 49.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "do",
-                    "value": 36.0
+                    "value": 36.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "da",
-                    "value": 29.0
+                    "value": 29.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 25.0
+                    "value": 25.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sparkling",
-                    "value": 24.0
+                    "value": 24.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "&",
-                    "value": 22.0
+                    "value": 22.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Late",
-                    "value": 11.0
+                    "value": 11.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Moët",
-                    "value": 10.0
+                    "value": 10.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -591,43 +721,53 @@
             "children": [
                 {
                     "name": "Riesling",
-                    "value": 396.0
+                    "value": 396.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Kabinett",
-                    "value": 101.0
+                    "value": 101.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Spätlese",
-                    "value": 84.0
+                    "value": 84.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Badstube",
-                    "value": 75.0
+                    "value": 75.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "H.",
-                    "value": 73.0
+                    "value": 73.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pauly",
-                    "value": 67.0
+                    "value": 67.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Konstantin",
-                    "value": 65.0
+                    "value": 65.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Auslese",
-                    "value": 64.0
+                    "value": 64.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sonnenuhr",
-                    "value": 40.0
+                    "value": 40.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "BergweilerBernkasteler",
-                    "value": 36.0
+                    "value": 36.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -636,43 +776,53 @@
             "children": [
                 {
                     "name": "Grüner",
-                    "value": 1180.0
+                    "value": 1180.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reserve",
-                    "value": 271.0
+                    "value": 271.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Smaragd",
-                    "value": 84.0
+                    "value": 84.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Federspiel",
-                    "value": 57.0
+                    "value": 57.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reben",
-                    "value": 43.0
+                    "value": 43.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Winzer",
-                    "value": 42.0
+                    "value": 42.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "&",
-                    "value": 38.0
+                    "value": 38.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Markus",
-                    "value": 38.0
+                    "value": 38.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Schloss",
-                    "value": 32.0
+                    "value": 32.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Lage",
-                    "value": 29.0
+                    "value": 29.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -681,43 +831,53 @@
             "children": [
                 {
                     "name": "Pinot",
-                    "value": 81.0
+                    "value": 81.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Noir",
-                    "value": 66.0
+                    "value": 66.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 66.0
+                    "value": 66.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cru",
-                    "value": 64.0
+                    "value": 64.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Swan",
-                    "value": 62.0
+                    "value": 62.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Drouhin",
-                    "value": 46.0
+                    "value": 46.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 36.0
+                    "value": 36.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grand",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Estate",
-                    "value": 28.0
+                    "value": 28.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Premier",
-                    "value": 27.0
+                    "value": 27.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -726,43 +886,53 @@
             "children": [
                 {
                     "name": "Riesling",
-                    "value": 258.0
+                    "value": 258.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "GG",
-                    "value": 87.0
+                    "value": 87.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Spätburgunder",
-                    "value": 38.0
+                    "value": 38.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Kabinett",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Dr.",
-                    "value": 28.0
+                    "value": 28.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "von",
-                    "value": 25.0
+                    "value": 25.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Lage",
-                    "value": 25.0
+                    "value": 25.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Silvaner",
-                    "value": 24.0
+                    "value": 24.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reichsgraf",
-                    "value": 22.0
+                    "value": 22.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Erste",
-                    "value": 22.0
+                    "value": 22.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -771,43 +941,53 @@
             "children": [
                 {
                     "name": "Pinot",
-                    "value": 235.0
+                    "value": 235.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Noir",
-                    "value": 226.0
+                    "value": 226.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 188.0
+                    "value": 188.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sauvignon",
-                    "value": 90.0
+                    "value": 90.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cabernet",
-                    "value": 74.0
+                    "value": 74.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chardonnay",
-                    "value": 67.0
+                    "value": 67.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Syrah",
-                    "value": 49.0
+                    "value": 49.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Blanc",
-                    "value": 43.0
+                    "value": 43.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Estate",
-                    "value": 40.0
+                    "value": 40.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reserve",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -816,43 +996,53 @@
             "children": [
                 {
                     "name": "de",
-                    "value": 230.0
+                    "value": 230.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "du",
-                    "value": 190.0
+                    "value": 190.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Domaine",
-                    "value": 114.0
+                    "value": 114.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cru",
-                    "value": 107.0
+                    "value": 107.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "La",
-                    "value": 82.0
+                    "value": 82.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "des",
-                    "value": 76.0
+                    "value": 76.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grand",
-                    "value": 75.0
+                    "value": 75.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 66.0
+                    "value": 66.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sauvignon",
-                    "value": 63.0
+                    "value": 63.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 55.0
+                    "value": 55.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -861,43 +1051,53 @@
             "children": [
                 {
                     "name": "Pinot",
-                    "value": 3697.0
+                    "value": 3697.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Noir",
-                    "value": 3516.0
+                    "value": 3516.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sauvignon",
-                    "value": 1567.0
+                    "value": 1567.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cabernet",
-                    "value": 1468.0
+                    "value": 1468.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chardonnay",
-                    "value": 1451.0
+                    "value": 1451.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Syrah",
-                    "value": 882.0
+                    "value": 882.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Zinfandel",
-                    "value": 641.0
+                    "value": 641.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Estate",
-                    "value": 590.0
+                    "value": 590.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Blanc",
-                    "value": 536.0
+                    "value": 536.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 514.0
+                    "value": 514.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -906,43 +1106,53 @@
             "children": [
                 {
                     "name": "di",
-                    "value": 157.0
+                    "value": 157.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "del",
-                    "value": 67.0
+                    "value": 67.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "La",
-                    "value": 54.0
+                    "value": 54.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Castello",
-                    "value": 40.0
+                    "value": 40.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 39.0
+                    "value": 39.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Tenuta",
-                    "value": 38.0
+                    "value": 38.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sparkling",
-                    "value": 35.0
+                    "value": 35.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Fattoria",
-                    "value": 34.0
+                    "value": 34.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "San",
-                    "value": 31.0
+                    "value": 31.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -951,43 +1161,53 @@
             "children": [
                 {
                     "name": "di",
-                    "value": 30.0
+                    "value": 30.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Marchesi",
-                    "value": 14.0
+                    "value": 14.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cantina",
-                    "value": 13.0
+                    "value": 13.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "del",
-                    "value": 10.0
+                    "value": 10.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Fratelli",
-                    "value": 9.0
+                    "value": 9.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pio",
-                    "value": 9.0
+                    "value": 9.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cesare",
-                    "value": 9.0
+                    "value": 9.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Rocca",
-                    "value": 8.0
+                    "value": 8.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Borgogno",
-                    "value": 8.0
+                    "value": 8.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Batasiolo",
-                    "value": 8.0
+                    "value": 8.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -996,43 +1216,53 @@
             "children": [
                 {
                     "name": "et",
-                    "value": 362.0
+                    "value": 362.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cru",
-                    "value": 165.0
+                    "value": 165.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Premier",
-                    "value": 139.0
+                    "value": 139.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Fils",
-                    "value": 123.0
+                    "value": 123.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chanson",
-                    "value": 110.0
+                    "value": 110.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "FilsLes",
-                    "value": 105.0
+                    "value": 105.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "&",
-                    "value": 81.0
+                    "value": 81.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Bouchard",
-                    "value": 81.0
+                    "value": 81.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Domaine",
-                    "value": 76.0
+                    "value": 76.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Fournier",
-                    "value": 64.0
+                    "value": 64.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1041,43 +1271,53 @@
             "children": [
                 {
                     "name": "Vineyard",
-                    "value": 76.0
+                    "value": 76.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Single",
-                    "value": 43.0
+                    "value": 43.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "D'ArenbergThe",
-                    "value": 27.0
+                    "value": 27.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reserve",
-                    "value": 24.0
+                    "value": 24.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Block",
-                    "value": 14.0
+                    "value": 14.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "NV",
-                    "value": 13.0
+                    "value": 13.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 13.0
+                    "value": 13.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "of",
-                    "value": 11.0
+                    "value": 11.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Two",
-                    "value": 11.0
+                    "value": 11.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "-",
-                    "value": 11.0
+                    "value": 11.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1086,43 +1326,53 @@
             "children": [
                 {
                     "name": "Vineyard",
-                    "value": 361.0
+                    "value": 361.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 243.0
+                    "value": 243.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Noir",
-                    "value": 240.0
+                    "value": 240.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chardonnay",
-                    "value": 109.0
+                    "value": 109.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sauvignon",
-                    "value": 81.0
+                    "value": 81.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Estate",
-                    "value": 64.0
+                    "value": 64.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cabernet",
-                    "value": 61.0
+                    "value": 61.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 55.0
+                    "value": 55.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "William",
-                    "value": 52.0
+                    "value": 52.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Syrah",
-                    "value": 40.0
+                    "value": 40.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1131,43 +1381,53 @@
             "children": [
                 {
                     "name": "Vineyard",
-                    "value": 154.0
+                    "value": 154.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cabernet",
-                    "value": 62.0
+                    "value": 62.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sauvignon",
-                    "value": 61.0
+                    "value": 61.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 48.0
+                    "value": 48.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Noir",
-                    "value": 44.0
+                    "value": 44.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 37.0
+                    "value": 37.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Zinfandel",
-                    "value": 21.0
+                    "value": 21.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chardonnay",
-                    "value": 19.0
+                    "value": 19.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Syrah",
-                    "value": 19.0
+                    "value": 19.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Spring",
-                    "value": 19.0
+                    "value": 19.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1176,43 +1436,53 @@
             "children": [
                 {
                     "name": "Red",
-                    "value": 196.0
+                    "value": 196.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Wine",
-                    "value": 97.0
+                    "value": 97.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 69.0
+                    "value": 69.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reserve",
-                    "value": 45.0
+                    "value": 45.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Estate",
-                    "value": 38.0
+                    "value": 38.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Blend",
-                    "value": 35.0
+                    "value": 35.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Brian",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Carter",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Betz",
-                    "value": 27.0
+                    "value": 27.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "of",
-                    "value": 25.0
+                    "value": 25.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1221,43 +1491,53 @@
             "children": [
                 {
                     "name": "Vineyard",
-                    "value": 274.0
+                    "value": 274.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 142.0
+                    "value": 142.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Noir",
-                    "value": 135.0
+                    "value": 135.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Estate",
-                    "value": 93.0
+                    "value": 93.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cabernet",
-                    "value": 69.0
+                    "value": 69.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sauvignon",
-                    "value": 67.0
+                    "value": 67.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chardonnay",
-                    "value": 65.0
+                    "value": 65.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 44.0
+                    "value": 44.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyards",
-                    "value": 40.0
+                    "value": 40.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Zinfandel",
-                    "value": 36.0
+                    "value": 36.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1266,43 +1546,53 @@
             "children": [
                 {
                     "name": "Cabernet",
-                    "value": 440.0
+                    "value": 440.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 109.0
+                    "value": 109.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Walla",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chateau",
-                    "value": 32.0
+                    "value": 32.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "CellarsCabernet",
-                    "value": 31.0
+                    "value": 31.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reserve",
-                    "value": 28.0
+                    "value": 28.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Ste.",
-                    "value": 25.0
+                    "value": 25.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Hills",
-                    "value": 21.0
+                    "value": 21.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Columbia",
-                    "value": 20.0
+                    "value": 20.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Seven",
-                    "value": 19.0
+                    "value": 19.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1311,43 +1601,53 @@
             "children": [
                 {
                     "name": "de",
-                    "value": 1155.0
+                    "value": 1155.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cru",
-                    "value": 661.0
+                    "value": 661.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "du",
-                    "value": 366.0
+                    "value": 366.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Premier",
-                    "value": 349.0
+                    "value": 349.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grand",
-                    "value": 341.0
+                    "value": 341.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "la",
-                    "value": 334.0
+                    "value": 334.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 317.0
+                    "value": 317.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "des",
-                    "value": 308.0
+                    "value": 308.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Rosé",
-                    "value": 285.0
+                    "value": 285.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Riesling",
-                    "value": 280.0
+                    "value": 280.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1356,43 +1656,53 @@
             "children": [
                 {
                     "name": "Pinot",
-                    "value": 278.0
+                    "value": 278.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Noir",
-                    "value": 268.0
+                    "value": 268.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 215.0
+                    "value": 215.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chardonnay",
-                    "value": 189.0
+                    "value": 189.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sauvignon",
-                    "value": 170.0
+                    "value": 170.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cabernet",
-                    "value": 123.0
+                    "value": 123.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Zinfandel",
-                    "value": 118.0
+                    "value": 118.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Blanc",
-                    "value": 68.0
+                    "value": 68.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Dutton",
-                    "value": 63.0
+                    "value": 63.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Syrah",
-                    "value": 61.0
+                    "value": 61.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1401,43 +1711,53 @@
             "children": [
                 {
                     "name": "Vineyard",
-                    "value": 882.0
+                    "value": 882.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reserve",
-                    "value": 118.0
+                    "value": 118.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 88.0
+                    "value": 88.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Estate",
-                    "value": 82.0
+                    "value": 82.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyards",
-                    "value": 77.0
+                    "value": 77.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grown",
-                    "value": 72.0
+                    "value": 72.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Ranch",
-                    "value": 61.0
+                    "value": 61.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Family",
-                    "value": 54.0
+                    "value": 54.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "of",
-                    "value": 50.0
+                    "value": 50.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Block",
-                    "value": 49.0
+                    "value": 49.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1446,43 +1766,53 @@
             "children": [
                 {
                     "name": "Vineyard",
-                    "value": 580.0
+                    "value": 580.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 511.0
+                    "value": 511.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Noir",
-                    "value": 483.0
+                    "value": 483.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grown",
-                    "value": 480.0
+                    "value": 480.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Bottled",
-                    "value": 343.0
+                    "value": 343.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sauvignon",
-                    "value": 320.0
+                    "value": 320.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cabernet",
-                    "value": 284.0
+                    "value": 284.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chardonnay",
-                    "value": 255.0
+                    "value": 255.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 193.0
+                    "value": 193.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reserve",
-                    "value": 116.0
+                    "value": 116.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1491,43 +1821,53 @@
             "children": [
                 {
                     "name": "Jean-Luc",
-                    "value": 113.0
+                    "value": 113.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "and",
-                    "value": 113.0
+                    "value": 113.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Noir",
-                    "value": 45.0
+                    "value": 45.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Aegerter",
-                    "value": 44.0
+                    "value": 44.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cru",
-                    "value": 43.0
+                    "value": 43.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 41.0
+                    "value": 41.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 35.0
+                    "value": 35.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "AegerterLes",
-                    "value": 35.0
+                    "value": 35.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Jaboulet",
-                    "value": 34.0
+                    "value": 34.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1536,43 +1876,53 @@
             "children": [
                 {
                     "name": "Domaine",
-                    "value": 88.0
+                    "value": 88.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Brut",
-                    "value": 78.0
+                    "value": 78.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "NV",
-                    "value": 66.0
+                    "value": 66.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Riesling",
-                    "value": 34.0
+                    "value": 34.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 32.0
+                    "value": 32.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 30.0
+                    "value": 30.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Blanc",
-                    "value": 30.0
+                    "value": 30.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grand",
-                    "value": 29.0
+                    "value": 29.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cru",
-                    "value": 27.0
+                    "value": 27.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cabernet",
-                    "value": 25.0
+                    "value": 25.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1581,43 +1931,53 @@
             "children": [
                 {
                     "name": "Vieilles",
-                    "value": 187.0
+                    "value": 187.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Domaine",
-                    "value": 174.0
+                    "value": 174.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 168.0
+                    "value": 168.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Château",
-                    "value": 105.0
+                    "value": 105.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "et",
-                    "value": 55.0
+                    "value": 55.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cru",
-                    "value": 55.0
+                    "value": 55.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "des",
-                    "value": 43.0
+                    "value": 43.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Riesling",
-                    "value": 36.0
+                    "value": 36.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Premier",
-                    "value": 36.0
+                    "value": 36.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "BelleneVieilles",
-                    "value": 35.0
+                    "value": 35.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1626,43 +1986,53 @@
             "children": [
                 {
                     "name": "Vineyard",
-                    "value": 433.0
+                    "value": 433.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sauvignon",
-                    "value": 109.0
+                    "value": 109.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cabernet",
-                    "value": 76.0
+                    "value": 76.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 64.0
+                    "value": 64.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Noir",
-                    "value": 62.0
+                    "value": 62.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Viña",
-                    "value": 51.0
+                    "value": 51.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Malbec",
-                    "value": 51.0
+                    "value": 51.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Blanc",
-                    "value": 47.0
+                    "value": 47.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Shiraz",
-                    "value": 43.0
+                    "value": 43.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Estate",
-                    "value": 30.0
+                    "value": 30.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1671,43 +2041,53 @@
             "children": [
                 {
                     "name": "Estate",
-                    "value": 497.0
+                    "value": 497.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sauvignon",
-                    "value": 283.0
+                    "value": 283.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cabernet",
-                    "value": 268.0
+                    "value": 268.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pinot",
-                    "value": 241.0
+                    "value": 241.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Noir",
-                    "value": 199.0
+                    "value": 199.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chardonnay",
-                    "value": 176.0
+                    "value": 176.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 166.0
+                    "value": 166.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Bottled",
-                    "value": 123.0
+                    "value": 123.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Blanc",
-                    "value": 115.0
+                    "value": 115.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "and",
-                    "value": 81.0
+                    "value": 81.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1716,43 +2096,53 @@
             "children": [
                 {
                     "name": "di",
-                    "value": 282.0
+                    "value": 282.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 121.0
+                    "value": 121.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "San",
-                    "value": 64.0
+                    "value": 64.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "La",
-                    "value": 59.0
+                    "value": 59.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Montalcino",
-                    "value": 48.0
+                    "value": 48.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Riserva",
-                    "value": 38.0
+                    "value": 38.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "delle",
-                    "value": 37.0
+                    "value": 37.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Brunello",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Nero",
-                    "value": 32.0
+                    "value": 32.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Rosso",
-                    "value": 31.0
+                    "value": 31.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1761,43 +2151,53 @@
             "children": [
                 {
                     "name": "Château",
-                    "value": 385.0
+                    "value": 385.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 67.0
+                    "value": 67.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Barrel",
-                    "value": 20.0
+                    "value": 20.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "la",
-                    "value": 17.0
+                    "value": 17.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "La",
-                    "value": 12.0
+                    "value": 12.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Le",
-                    "value": 12.0
+                    "value": 12.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Tour",
-                    "value": 10.0
+                    "value": 10.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Haut-BrionBarrel",
-                    "value": 10.0
+                    "value": 10.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Clos",
-                    "value": 9.0
+                    "value": 9.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Les",
-                    "value": 7.0
+                    "value": 7.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1806,43 +2206,53 @@
             "children": [
                 {
                     "name": "Cru",
-                    "value": 133.0
+                    "value": 133.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Premier",
-                    "value": 128.0
+                    "value": 128.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Latour",
-                    "value": 96.0
+                    "value": 96.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 79.0
+                    "value": 79.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Brut",
-                    "value": 58.0
+                    "value": 58.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Jadot",
-                    "value": 48.0
+                    "value": 48.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "NV",
-                    "value": 36.0
+                    "value": 36.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "M.",
-                    "value": 35.0
+                    "value": 35.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "LatourLes",
-                    "value": 32.0
+                    "value": 32.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sauvignon",
-                    "value": 28.0
+                    "value": 28.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1851,43 +2261,53 @@
             "children": [
                 {
                     "name": "Père",
-                    "value": 362.0
+                    "value": 362.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cru",
-                    "value": 209.0
+                    "value": 209.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Domaine",
-                    "value": 196.0
+                    "value": 196.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 164.0
+                    "value": 164.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Premier",
-                    "value": 159.0
+                    "value": 159.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Fils",
-                    "value": 152.0
+                    "value": 152.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "FilsLes",
-                    "value": 120.0
+                    "value": 120.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Rosé",
-                    "value": 111.0
+                    "value": 111.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chanson",
-                    "value": 110.0
+                    "value": 110.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Brut",
-                    "value": 76.0
+                    "value": 76.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1896,43 +2316,53 @@
             "children": [
                 {
                     "name": "Riesling",
-                    "value": 327.0
+                    "value": 327.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Dr.",
-                    "value": 84.0
+                    "value": 84.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Lage",
-                    "value": 37.0
+                    "value": 37.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sonnenuhr",
-                    "value": 35.0
+                    "value": 35.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Badstube",
-                    "value": 28.0
+                    "value": 28.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "von",
-                    "value": 22.0
+                    "value": 22.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Grosse",
-                    "value": 22.0
+                    "value": 22.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Trocken",
-                    "value": 19.0
+                    "value": 19.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Himmelreich",
-                    "value": 18.0
+                    "value": 18.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Reichsgraf",
-                    "value": 18.0
+                    "value": 18.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1941,43 +2371,53 @@
             "children": [
                 {
                     "name": "Riesling",
-                    "value": 342.0
+                    "value": 342.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Dr.",
-                    "value": 101.0
+                    "value": 101.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Badstube",
-                    "value": 37.0
+                    "value": 37.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Trocken",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Goldtröpfchen",
-                    "value": 26.0
+                    "value": 26.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "H.",
-                    "value": 21.0
+                    "value": 21.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "von",
-                    "value": 21.0
+                    "value": 21.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Lage",
-                    "value": 20.0
+                    "value": 20.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sonnenuhr",
-                    "value": 20.0
+                    "value": 20.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Feinherb",
-                    "value": 20.0
+                    "value": 20.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -1986,43 +2426,53 @@
             "children": [
                 {
                     "name": "di",
-                    "value": 87.0
+                    "value": 87.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 54.0
+                    "value": 54.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Syrah",
-                    "value": 46.0
+                    "value": 46.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "del",
-                    "value": 45.0
+                    "value": 45.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 36.0
+                    "value": 36.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Domaine",
-                    "value": 34.0
+                    "value": 34.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "delle",
-                    "value": 34.0
+                    "value": 34.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Tenuta",
-                    "value": 29.0
+                    "value": 29.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Vineyard",
-                    "value": 23.0
+                    "value": 23.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Rosé",
-                    "value": 18.0
+                    "value": 18.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -2031,43 +2481,53 @@
             "children": [
                 {
                     "name": "Château",
-                    "value": 276.0
+                    "value": 276.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "de",
-                    "value": 44.0
+                    "value": 44.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Haut-Brion",
-                    "value": 25.0
+                    "value": 25.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Haut",
-                    "value": 19.0
+                    "value": 19.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Pape",
-                    "value": 19.0
+                    "value": 19.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Domaine",
-                    "value": 18.0
+                    "value": 18.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "la",
-                    "value": 17.0
+                    "value": 17.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Bouscaut",
-                    "value": 16.0
+                    "value": 16.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Couhins-Lurton",
-                    "value": 15.0
+                    "value": 15.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Clément",
-                    "value": 15.0
+                    "value": 15.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -2076,43 +2536,53 @@
             "children": [
                 {
                     "name": "di",
-                    "value": 371.0
+                    "value": 371.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 82.0
+                    "value": 82.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Classico",
-                    "value": 54.0
+                    "value": 54.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Chianti",
-                    "value": 53.0
+                    "value": 53.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Riserva",
-                    "value": 40.0
+                    "value": 40.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Sauvignon",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "del",
-                    "value": 31.0
+                    "value": 31.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Montalcino",
-                    "value": 29.0
+                    "value": 29.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Selezione",
-                    "value": 26.0
+                    "value": 26.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cabernet",
-                    "value": 25.0
+                    "value": 25.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -2121,43 +2591,53 @@
             "children": [
                 {
                     "name": "Valpolicella",
-                    "value": 258.0
+                    "value": 258.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Amarone",
-                    "value": 251.0
+                    "value": 251.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Classico",
-                    "value": 173.0
+                    "value": 173.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Corte",
-                    "value": 29.0
+                    "value": 29.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "di",
-                    "value": 27.0
+                    "value": 27.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Red",
-                    "value": 22.0
+                    "value": 22.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "San",
-                    "value": 18.0
+                    "value": 18.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Cantina",
-                    "value": 16.0
+                    "value": 16.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "del",
-                    "value": 15.0
+                    "value": 15.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Le",
-                    "value": 14.0
+                    "value": 14.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -2166,43 +2646,53 @@
             "children": [
                 {
                     "name": "di",
-                    "value": 906.0
+                    "value": 906.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Montalcino",
-                    "value": 842.0
+                    "value": 842.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "La",
-                    "value": 104.0
+                    "value": 104.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Poggio",
-                    "value": 37.0
+                    "value": 37.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Tenuta",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Il",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Le",
-                    "value": 26.0
+                    "value": 26.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "San",
-                    "value": 24.0
+                    "value": 24.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Podere",
-                    "value": 22.0
+                    "value": 22.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Castello",
-                    "value": 20.0
+                    "value": 20.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         },
@@ -2211,43 +2701,53 @@
             "children": [
                 {
                     "name": "di",
-                    "value": 1227.0
+                    "value": 1227.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Brunello",
-                    "value": 838.0
+                    "value": 838.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Rosso",
-                    "value": 296.0
+                    "value": 296.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "La",
-                    "value": 133.0
+                    "value": 133.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Poggio",
-                    "value": 54.0
+                    "value": 54.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Tenuta",
-                    "value": 48.0
+                    "value": 48.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Il",
-                    "value": 41.0
+                    "value": 41.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Le",
-                    "value": 36.0
+                    "value": 36.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "San",
-                    "value": 33.0
+                    "value": 33.0,
+                    "tooltip": "add tooltip"
                 },
                 {
                     "name": "Castello",
-                    "value": 29.0
+                    "value": 29.0,
+                    "tooltip": "add tooltip"
                 }
             ]
         }
