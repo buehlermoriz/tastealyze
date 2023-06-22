@@ -77,7 +77,7 @@
       </div>
     </div>
   </div>
-  <div class="legend-container hidden md:block"></div>
+  <div class="legend-container-large hidden md:block"></div>
 </template>
 
 <script>
@@ -117,13 +117,21 @@ export default {
       }
 
 
-
     var legend = d3
+    if(isMobile){ 
+      legend = d3
       .select(".legend-container")
       .append("svg")
       .attr("width", legendWidth)
       .attr("height", legendHeight);
-
+    }
+    else{
+    var legend = d3
+      .select(".legend-container-large")
+      .append("svg")
+      .attr("width", legendWidth)
+      .attr("height", legendHeight);
+    }
     // The svg
     var svg = d3
       .select("#map")

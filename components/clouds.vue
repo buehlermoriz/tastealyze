@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-14  md:ml-[20%] md:mt-20 md:grid text-center">
+  <div class="pb-14 pt-8  md:ml-[20%] md:mt-20 md:grid text-center">
     <h2
       class="mx-[5%] font-semibold uppercase md:text-5xl text-2xl"
     >
