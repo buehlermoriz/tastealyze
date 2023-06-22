@@ -1,9 +1,9 @@
 <template>
-  <div id="titles" class="Treemap_wrapper mt-28 pb-28">
-    <div class="grid grid-cols-6 gap-y-1">
-      <div class="col-span-2">
-        <h1 class="headline-treemap">Wie heißt ein guter Wein?</h1>
-        <p id="description">
+  <div class="mx-[5%] md:ml[20%] mt-28 pb-28">
+    <div class="md:grid md:grid-cols-6 md:gap-y-1">
+      <div class="md:col-span-2">
+        <h1 class="text-2xl md:text-5xl">Wie heißt ein guter Wein?</h1>
+        <p>
           "Lisa" sucht als nächstes nach einer passenden Flasche Wein. Doch was
           steht eigentlich auf einer guten Flasche Wein? Die hier dargestellte
           Grafik zeigt die 30 beliebtesten Begriffe, welche laut den
@@ -18,7 +18,7 @@
         </p>
 
       </div>
-      <div class="col-span-4">
+      <div class="md:col-span-4">
         <Treemap
           @treemap_select="handleTreemapSelect"
           url="https://raw.githubusercontent.com/buehlermoriz/tastealyze/main/assets/treemap_points.csv "
@@ -50,23 +50,7 @@ export default {
 };
 </script>
 <style>
-/* Background Color*/
-.Treemap_wrapper {
-  padding-left: 20%;
-  padding-right: 2%;
-}
-#description {
-  height: 100%;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-.headline-treemap {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  line-height: 1;
-  font-size: 4rem;
-  font-weight: bold;
-}
+
 .disclosure {
   font-size: 0.7rem;
   font-style: italic;

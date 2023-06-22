@@ -49,9 +49,19 @@ export default {
       }
 
       // set the dimensions and margins of the graph
-      const margin = { top: 10, right: 10, bottom: 10, left: 10 },
-        width = 890 - margin.left - margin.right,
-        height = 600 - margin.top - margin.bottom;
+       // set the dimensions and margins of the graph
+       const margin = { top: 10, right: 10, bottom: 10, left: 10 };
+      const screenWidth = window.innerWidth;
+      const isMobile = screenWidth < 768;
+      let width = 500;
+      let height = 500;
+      if (isMobile) {
+        width = screenWidth * 0.9 - margin.left - margin.right;
+        height = width*2 - margin.left - margin.right;
+      } else {
+        width = screenWidth * 0.4 - margin.left - margin.right;
+        height = width*2 - margin.left - margin.right;
+      }
 
       // append the svg object to the body of the page
       const svg = d3

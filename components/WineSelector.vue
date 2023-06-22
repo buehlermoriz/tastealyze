@@ -1,6 +1,6 @@
 <template>
   <div id="wineselector	">
-    <div class="md:ml-[20%] ml-[5%]">
+    <div class="md:ml-[20%] mx-[5%]">
       <div class=" mt-28 pb-28">
         <h1 class="font-semibold  uppercase md:text-5xl text-2xl ">
           wähle deinen Wein

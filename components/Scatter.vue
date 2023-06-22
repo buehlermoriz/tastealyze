@@ -1,5 +1,5 @@
 <template>
-  <div class="scatter_wrapper pb-28 pt-28 ml-[5%] md:ml-[20%]">
+  <div class="scatter_wrapper pb-28 pt-28 mx-[5%] md:ml-[20%]">
     <div class="md:grid md:grid-cols-6 md:gap-y-1">
       <div class="md:col-span-2">
         <h1 class="text-2xl md:text-5xl text-bold">Preis und Punkte</h1>
