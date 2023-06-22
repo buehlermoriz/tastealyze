@@ -8,6 +8,12 @@ import * as d3 from "d3";
 import cloud from "d3-cloud";
 
 export default {
+  data() {
+    return {
+      width: "",
+      height: "",
+    };
+  },
   props: {
     keywords: {
       type: Array,
@@ -29,8 +35,17 @@ export default {
       const wordcloudTooltip = document.getElementById("tooltipWordcloud");
       const data = props.keywords;
 
-      const width = 600;
-      const height = 600;
+      const screenWidth = window.innerWidth;
+      const isMobile = screenWidth < 768;
+      let width = 500;
+      let height = 500;
+      if (isMobile) {
+        width = screenWidth * 0.9;
+        height = width;
+      } else {
+        width = screenWidth * 0.4;
+        height = width;
+      }
 
       const tooltip = d3
         .select("wordcloudTooltip")
@@ -121,7 +136,12 @@ export default {
           .style("left", `${event.pageX + 10}px`)
           .style("top", `${event.pageY}px`);
 
-        tooltip.html('<span class="text-xl font-bold">'+d.text + "</span><br/>" + d.tooltip);
+        tooltip.html(
+          '<span class="text-xl font-bold">' +
+            d.text +
+            "</span><br/>" +
+            d.tooltip
+        );
       }
 
       function hideTooltip() {

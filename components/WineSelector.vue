@@ -2,7 +2,7 @@
   <div id="wineselector	">
     <div class="md:ml-[20%] ml-[5%]">
       <div class=" mt-28 pb-28">
-        <h1 class="font-semibold  uppercase md:text-5xl text-2xl font-['Bodoni MT']">
+        <h1 class="font-semibold  uppercase md:text-5xl text-2xl ">
           wähle deinen Wein
         </h1>
       </div>
