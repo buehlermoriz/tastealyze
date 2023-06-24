@@ -91,7 +91,7 @@ export default {
         x: 0,
         y: 0,
       },
-      tooltipCountry: "zum auswählen hovern",
+      tooltipCountry: "",
       tooltipPoints: "0",
       tooltipPrice: "0",
       tooltipLanguage: "0",
@@ -110,10 +110,12 @@ export default {
         width = 370;
         height = 260;
         legendWidth = screenWidth * 0.9;
+        this.tooltipCountry = "zum auswählen tippen";
       } else {
         width = 700;
         height = 500;
         legendWidth = screenWidth * 0.6;
+        this.tooltipCountry = "zum auswählen hovern";
       }
 
 
@@ -225,7 +227,12 @@ export default {
             };
           })
           .on("mouseout", () => {
-            (this.tooltipCountry = "zum auswählen hovern"),
+            if (isMobile){
+              this.tooltipCountry = "zum auswählen tippen"
+            }else{
+              this.tooltipCountry = "zum auswählen hovern"
+            }
+              
               (this.tooltipPoints = "0"),
               (this.tooltipPrice = "0"),
               (this.tooltipLanguage = "0"),

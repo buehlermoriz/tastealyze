@@ -1,5 +1,5 @@
 <template>
-  <div id="wineselector	">
+  <div id="wineselector">
     <div class="md:ml-[20%] mx-[5%]">
       <div class=" mt-14 pb-28">
         <h1 class="font-semibold  uppercase md:text-5xl text-2xl ">
@@ -10,7 +10,7 @@
         <div id="Weißwein" class="col-span-1 flex justify-center">
           <img
             src="../assets/bottles/whitewine.png"
-            class="mx-auto my-auto max-h-[300px]"
+            class="mx-auto my-auto max-h-[350px]"
             :class="{ 'active-bottle': active === 'Weißwein' }"
             @click="updateActive('Weißwein')"
           />
@@ -18,7 +18,7 @@
         <div id="Rotwein" class="col-span-1 flex justify-center">
           <img
             src="../assets/bottles/redwine.png"
-            class="mx-auto my-auto max-h-[600px]"
+            class="mx-auto my-auto max-h-[350px]"
             :class="{ 'active-bottle': active === 'Rotwein' }"
             @click="updateActive('Rotwein')"
           />
@@ -26,7 +26,7 @@
         <div id="Roséwein" class="col-span-1 flex justify-center">
           <img
             src="../assets/bottles/rosewine.png"
-            class="mx-auto my-auto max-h-[300px]"
+            class="mx-auto my-auto max-h-[350px]"
             :class="{ 'active-bottle': active === 'Roséwein' }"
             @click="updateActive('Roséwein')"
           />
@@ -91,7 +91,7 @@ export default {
 </script>
 <style>
 .active-bottle {
-  transform: scale(1.6);
+  transform: scale(1.8);
   transition: transform 1s ease;
 }
 
