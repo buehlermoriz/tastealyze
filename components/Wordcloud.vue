@@ -166,5 +166,11 @@ export default {
   padding: 0.5rem;
   border-radius: 0.5rem;
   max-width: 20%;
+  word-wrap: break-word;
+}
+@media (max-width: 768px) {
+  .tooltipWordcloud {
+    max-width: 50%; 
+  }
 }
 </style>
