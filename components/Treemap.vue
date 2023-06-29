@@ -1,15 +1,12 @@
 <template>
-  <div v-if="keyword === null" id="titles" class="flex m-3 items-center">
+  <div class="general_treemap_wrapper"></div>
+  <div v-if="keyword===null" class="flex m-3 items-center">
     <img src="../assets/click.gif" />
-    <p class="text-gray-400 italic">
-      Info: Du willst wissen, welche Keywords sich mit den Begriffen gut
-      kombinieren lassen? Klicke doch einfach auf das entsprechende Feld.
-    </p>
+    <p class="text-gray-400 italic">Info: Du willst wissen, welche Keywords sich mit den Begriffen gut kombinieren lassen? Klicke doch einfach auf das entsprechende Feld. </p>
   </div>
-<div class="flex justify-center items-center">
+
   <div id="treemap"></div>
-  <p class="hidden" id="tooltipTreemap">{{ tooltip }}</p>
-</div>
+  <p id="tooltipTreemap">{{ tooltip }}</p>
 </template>
 
 <script>
@@ -43,18 +40,9 @@ export default {
 
     const generate = () => {
       // set the dimensions and margins of the graph
-      const margin = { top: 10, right: 10, bottom: 10, left: 10 };
-      const screenWidth = window.innerWidth;
-      const isMobile = screenWidth < 768;
-      let width = 500;
-      let height = 500;
-      if (isMobile) {
-        width = screenWidth * 0.9 - margin.left - margin.right;
-        height = width * 2 - margin.left - margin.right;
-      } else {
-        width = screenWidth * 0.4 - margin.left - margin.right;
-        height = width - margin.left - margin.right;
-      }
+      const margin = { top: 10, right: 10, bottom: 10, left: 10 },
+        width = 890 - margin.left - margin.right,
+        height = 600 - margin.top - margin.bottom;
 
       // append the svg object to the body of the page
       const svg = d3
@@ -108,28 +96,33 @@ export default {
             return d.y1 - d.y0;
           })
           .style("fill", "#f87171")
-          .on("mouseover", (event, d) => {
-            mouseOver(event, d);
+          .on("mouseover", function (event, d) {
+            //display tooltip
+            const tooltip = d3.select("#tooltipTreemap");
+            tooltip.style("display", "block");
+            // Show tooltip on mouseover
+            self.tooltip = tooltipMap.get(d.data.keyword).replace("&#44;", ",");
+            //coordinates
+            tooltip
+              .style("left", event.pageX + 10 + "px")
+              .style("top", event.pageY + 10 + "px");
           })
-          .on("touchstart", (event, d) => {
-            mouseOver(event, d);
-          })
-          .on("mousemove", (event) => {
-            mouseMove(event);
-          })
-          .on("touchmove", (event) => {
-            mouseMove(event);
+          .on("mousemove", function (event) {
+            //coordinates
+            const tooltip = d3.select("#tooltipTreemap");
+            tooltip
+              .style("left", event.pageX + 10 + "px")
+              .style("top", event.pageY + 10 + "px");
           })
           .on("mouseout", function () {
-          mouseOut()
-          })
-          .on("touchend", function () {
-          mouseOut()
+            // Hide tooltip on mouseout
+            const tooltip = d3.select("#tooltipTreemap");
+            tooltip.style("display", "none");
           })
           .on("click", function (event, d) {
             // Emit value to parent component
             self.emitValue(d.data.keyword);
-          });
+          })
 
         // and to add the text labels
         svg
@@ -147,41 +140,24 @@ export default {
           })
           .attr("font-size", "13px")
           .attr("fill", "white");
-
-        function mouseOver(event, d) {
-          //display tooltip
-          const tooltip = d3.select("#tooltipTreemap");
-          tooltip.style("display", "block");
-          // Show tooltip on mouseover
-          self.tooltip = tooltipMap.get(d.data.keyword).replace("&#44;", ",");
-          //coordinates
-          tooltip
-            .style("left", event.pageX + 10 + "px")
-            .style("top", event.pageY + 10 + "px");
-        }
-        function mouseMove(event) {
-          //coordinates
-          const tooltip = d3.select("#tooltipTreemap");
-          tooltip
-            .style("left", event.pageX + 10 + "px")
-            .style("top", event.pageY + 10 + "px");
-        }
-        function mouseOut() {
-          // Hide tooltip on mouseout
-          const tooltip = d3.select("#tooltipTreemap");
-          tooltip.style("display", "none");
-        }
       });
     };
-    if (this.keyword == null) {
+    if (this.keyword== null) {
       generate();
-    }
-  },
+    }  },
 };
 </script>
 
 <style>
+/* center treemap */
+#treemap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 #tooltipTreemap {
+  display: none;
   /* card style */
   position: absolute;
   background-color: #282828;
@@ -189,12 +165,5 @@ export default {
   padding: 0.5rem;
   border-radius: 0.5rem;
   max-width: 20%;
-  word-wrap: break-word;
-
-}
-@media (max-width: 768px) {
-  #tooltipTreemap {
-    max-width: 50%; 
-  }
 }
 </style>

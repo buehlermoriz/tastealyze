@@ -96,7 +96,7 @@ export default {
         x: 0,
         y: 0,
       },
-      tooltipCountry: "",
+      tooltipCountry: "zum auswählen hovern",
       tooltipPoints: "0",
       tooltipPrice: "0",
       tooltipLanguage: "0",
@@ -107,24 +107,8 @@ export default {
     var width = 1100;
     var height = 650;
 
-    const screenWidth = window.innerWidth;
-      const isMobile = screenWidth < 768;
-      let width = 500;
-      let height = 500;
-      let legendWidth = 500;
-      let legendHeight = 60;
-      if (isMobile) {
-        width = 370;
-        height = 260;
-        legendWidth = screenWidth * 0.9;
-        this.tooltipCountry = "zum auswählen tippen";
-      } else {
-        width = 700;
-        height = 500;
-        legendWidth = screenWidth * 0.6;
-        this.tooltipCountry = "zum auswählen hovern";
-      }
-
+    var legendWidth = 1000;
+    var legendHeight = 60;
 
     var legend = d3
       .select(".legend-container")
@@ -219,12 +203,7 @@ export default {
             };
           })
           .on("mouseout", () => {
-            if (isMobile){
-              this.tooltipCountry = "zum auswählen tippen"
-            }else{
-              this.tooltipCountry = "zum auswählen hovern"
-            }
-              
+            (this.tooltipCountry = "zum auswählen hovern"),
               (this.tooltipPoints = "0"),
               (this.tooltipPrice = "0"),
               (this.tooltipLanguage = "0"),
