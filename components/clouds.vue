@@ -1,21 +1,5 @@
 <template>
   <div id="wordcloud" class="pb-14 pt-8  md:ml-[20%] md:mt-20 md:grid text-center">
-    <h2
-      class="mx-[5%] font-semibold uppercase md:text-5xl text-2xl text-neutral-700/10"
-    >
-      Wie werden Weine beschrieben?
-    </h2>
-    <p class=" px-[5%] mt-5 md:pr-8 text-neutral-700/10">
-      Bei Weinproben verwenden Tester verschiedene Wörter, um Weine zu
-      beschreiben. Dabei gibt es klare Unterschiede in der Wortwahl, je nachdem,
-      ob ein Wein als gut oder schlecht bewertet wird. Die Wahl der Wörter
-      spielt eine wichtige Rolle, um die sensorischen Eigenschaften und die
-      Gesamtbewertung eines Weins treffend zu beschreiben und den Verbrauchern
-      eine Vorstellung davon zu vermitteln, was sie erwarten können. Die
-      Weintester von WineEnthusiast konnten dabei bis zu 100 Punkte für einen
-      besonders guten Wein vergeben. Im folgenden erfahren Sie, wie gut oder
-      schlechter bewertete Weine beschrieben wurden.
-    </p>
     <div class="md:grid md:grid-cols-6 md:gap-y-1 mt-5">
       <div class="md:col-span-3 my-5">
         <h3 class="font-semibold uppercase text-2xl md:text-3xl">

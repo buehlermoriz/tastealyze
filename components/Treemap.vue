@@ -1,11 +1,4 @@
 <template>
-  <div v-if="keyword === null" id="titles" class="flex m-3 items-center">
-    <img src="../assets/click.gif" />
-    <p class="text-neutral-700/10 italic">
-      Info: Du willst wissen, welche Keywords sich mit den Begriffen gut
-      kombinieren lassen? Klicke doch einfach auf das entsprechende Feld.
-    </p>
-  </div>
 <div class="flex justify-center items-center">
   <div id="treemap"></div>
   <p class="hidden" id="tooltipTreemap">{{ tooltip }}</p>
