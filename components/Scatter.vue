@@ -5,12 +5,7 @@
         <h1 class="text-2xl md:text-5xl font-semibold pb-8">Preis und Punkte</h1>
         <p>
           "Lisa" ist im Supermarkt und sieht viele Weine, recht daneben sieht
-          sie diese Grafik. Verschiedene Weintester haben Punkte an Weine
-          vergeben, dazu gibt der Markt die Informationen der Preise zusätzlich
-          an, um eine Relation erkennbar zu machen. Diese Grafik zeigt das
-          Billige Weine eine Große diskrepant in der Qualität aufweisen, diese
-          können von gut bis ungenießbar reichen, wobei teurere Weine oft besser
-          bewertet werden.
+          sie diese Grafik. Verschiedene Weintester haben die Weine bewertet und Punkte vergeben. Dazu gibt der Markt die Informationen der Preise zusätzlich an, um eine Relation erkennbar zu machen. Die Visualisierung zeigt, dass billigere Weine eine größere Diskrepanz in der Qualität aufweisen. Das bedeutet, dass die Weine von sehr gut bis ungenießbar reichen. Insgesamt werden aber teurere Weine oft besser bewertet.
         </p>
       </div>
       <div class="mt-5 md:mt-0 md:col-span-4 justify-center">
