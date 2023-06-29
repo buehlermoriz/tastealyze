@@ -2,13 +2,13 @@
   <div class="mx-[5%] md:ml-[20%] my-8">
     <div class="md:grid md:grid-cols-6 md:gap-y-1">
       <div class="md:col-span-2">
-        <h1 class="text-2xl md:text-5xl font-semibold mb-5">Wie heißt ein guter Wein?</h1>
-        <p>
+        <h1 class="text-2xl md:text-5xl font-semibold mb-5 text-neutral-700/10">Wie heißt ein guter Wein?</h1>
+        <p class="text-neutral-700/10">
           "Lisa" sucht als nächstes nach einer passenden Flasche Wein. Doch was
           steht eigentlich auf einer guten Flasche Wein? Die hier dargestellte
           Grafik zeigt die 30 beliebtesten Begriffe, welche laut den
           ausgewerteten Reviews auf einem Etikett stehen können.
-          <span class="disclosure">
+          <span class="text-neutral-700/10">
             <br /><br />
             Für die Darstellung wurden nur die 120 Begriffe, welche am
             häufigsten auf Weinetiketten vorkommen ausgewertet, um keine Namen
@@ -16,7 +16,6 @@
             Füllwörter und Rebsorten aussortiert.
           </span>
         </p>
-
       </div>
       <div class="md:col-span-4">
         <Treemap

@@ -1,11 +1,11 @@
 <template>
   <div id="wordcloud" class="pb-14 pt-8  md:ml-[20%] md:mt-20 md:grid text-center">
     <h2
-      class="mx-[5%] font-semibold uppercase md:text-5xl text-2xl"
+      class="mx-[5%] font-semibold uppercase md:text-5xl text-2xl text-neutral-700/10"
     >
       Wie werden Weine beschrieben?
     </h2>
-    <p class=" px-[5%] mt-5 md:pr-8">
+    <p class=" px-[5%] mt-5 md:pr-8 text-neutral-700/10">
       Bei Weinproben verwenden Tester verschiedene Wörter, um Weine zu
       beschreiben. Dabei gibt es klare Unterschiede in der Wortwahl, je nachdem,
       ob ein Wein als gut oder schlecht bewertet wird. Die Wahl der Wörter

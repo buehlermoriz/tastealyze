@@ -1,7 +1,7 @@
 <template>
   <div class="treemap_detail_wrapper">
     <h2 class="font-semibold uppercase md:text-5xl m-3">{{ keyword }}</h2>
-    <p class="m-3" v-if="keyword">Doch welche Begriffe werden mit dem Keyword <span class="font-semibold"> {{ keyword }} </span>  in Weinnamen häufig kombiniert? Hier die Top 10 der kombinierten Keywords. <br> Über den nachfolgenden Button haben Sie die Möglichkeit zurück zur Übersicht zu gelangen. </p>
+    <p class="m-3 text-neutral-700/10" v-if="keyword">Doch welche Begriffe werden mit dem Keyword <span class="font-semibold"> {{ keyword }} </span>  in Weinnamen häufig kombiniert? Hier die Top 10 der kombinierten Keywords. <br> Über den nachfolgenden Button haben Sie die Möglichkeit zurück zur Übersicht zu gelangen. </p>
     <button @click="backToOverview" v-if="keyword" type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-3 mb-2">zur Übersicht</button>
     <div id="treemap_detail"></div>
   <p class="hidden" id="tooltipDetail">{{ tooltip }}</p>

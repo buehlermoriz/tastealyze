@@ -2,8 +2,8 @@
   <div id="priceandpoints" class="scatter_wrapper pb-28 pt-8 mx-[5%] md:ml-[20%]">
     <div class="md:grid md:grid-cols-6 md:gap-y-1">
       <div class="md:col-span-2">
-        <h1 class="text-2xl md:text-5xl font-semibold pb-8">Preis und Punkte</h1>
-        <p>
+        <h1 class="text-2xl md:text-5xl font-semibold pb-8 text-neutral-700/10">Preis und Punkte</h1>
+        <p class="text-neutral-700/10">
           Verschiedene Weintester haben die Weine bewertet und Punkte vergeben. Dazu gibt der Markt die Informationen der Preise zusätzlich an, um eine Relation erkennbar zu machen. Die Visualisierung zeigt, dass billigere Weine eine größere Diskrepanz in der Qualität aufweisen. Das bedeutet, dass die Weine von sehr gut bis ungenießbar reichen. Insgesamt werden aber teurere Weine oft besser bewertet.
         </p>
       </div>

@@ -6,11 +6,11 @@
       :style="`background-image: url(${backgroundImage})`"
     >
       <div class="mx-[5%] pt-5 md:ml-[20%] md:mr-[35%] md:pt-16">
-        <h2 class="font-semibold uppercase text-2xl md:text-5xl">
+        <h2 class="text-neutral-700/10	font-semibold uppercase text-2xl md:text-5xl">
           Gibt es Qualitäts- und Eigenschafts-unterschiede in der
-          <span class="text-red-700">globalen Weinproduktion?</span>
+          <span class="text-neutral-700/10 ">globalen Weinproduktion?</span>
         </h2>
-        <p class="py-5">
+        <p class=" text-neutral-700/10	py-5">
           Verschiedene Faktoren beeinflussen die Qualität und die
           charakteristischen Eigenschaften von Wein. Seit Jahrtausenden ist Wein
           ein wichtiger Bestandteil der menschlichen Kultur und wird weltweit

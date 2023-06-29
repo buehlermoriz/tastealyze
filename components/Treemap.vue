@@ -1,7 +1,7 @@
 <template>
   <div v-if="keyword === null" id="titles" class="flex m-3 items-center">
     <img src="../assets/click.gif" />
-    <p class="text-gray-400 italic">
+    <p class="text-neutral-700/10 italic">
       Info: Du willst wissen, welche Keywords sich mit den Begriffen gut
       kombinieren lassen? Klicke doch einfach auf das entsprechende Feld.
     </p>

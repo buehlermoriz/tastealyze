@@ -33,14 +33,14 @@
         </div>
         <div class="col-span-6 mt-32 md:mt-0 mr-5 mb-20	">
           <div class="hidden md:block">
-            <h2 class="text-2xl mb-5">{{ active }}</h2>
-            <p class="mb-5">{{ getText(active) }}</p>
+            <h2 class="text-2xl mb-5 text-neutral-700/10">{{ active }}</h2>
+            <p class="mb-5 text-neutral-700/10">{{ getText(active) }}</p>
           </div>
           <GrapeCarousel @updateGrape="handleUpdateGrape" :key="watchChanges" :wine-type="active" />
           <RadarChart @updateData="handleUpdateData" :key="watchChanges" :wine-type="active" :grape-type="grape" :lastData="lastRadarChart" />
           <div class="md:hidden">
-            <h2 class="text-2xl mb-5">{{ active }}</h2>
-            <p class="mb-5">{{ getText(active) }}</p>
+            <h2 class="text-2xl mb-5 text-neutral-700/10">{{ active }}</h2>
+            <p class="mb-5 text-neutral-700/10">{{ getText(active) }}</p>
           </div>
         </div>
       </div>
