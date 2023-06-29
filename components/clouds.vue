@@ -52,7 +52,6 @@ export default {
   methods: {
     handleResize() {
       this.componentKey += 1;
-      console.log(this.componentKey);
     },
   },
 };
