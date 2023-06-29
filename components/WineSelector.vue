@@ -67,6 +67,7 @@ export default {
   methods: {
     updateActive(id) {
       this.active = id;
+      this.grape = "";
     },
     getText(id) {
       return this.textMap[id] || "";
