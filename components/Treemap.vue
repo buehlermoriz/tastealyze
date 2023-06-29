@@ -1,6 +1,5 @@
 <template>
-  <div class="general_treemap_wrapper"></div>
-  <div v-if="keyword === null" class="flex m-3 items-center">
+  <div v-if="keyword === null" id="titles" class="flex m-3 items-center">
     <img src="../assets/click.gif" />
     <p class="text-gray-400 italic">
       Info: Du willst wissen, welche Keywords sich mit den Begriffen gut
