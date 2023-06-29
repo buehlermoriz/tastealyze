@@ -1,11 +1,17 @@
 <template>
-<div class="map_wrapper pb-28  pt-28">
-  <div class="grid grid-cols-6 gap-y-1">
-      <div class="col-span-2">
-         <h1 class="headline-treemap">Preis und Punkte</h1>
-         <p> "Lisa" ist im Supermarkt und sieht viele Weine, recht daneben sieht sie diese Grafik.
-            Verschiedene Weintester haben Punkte an Weine vergeben, dazu gibt der Markt die Informationen der Preise zusätzlich an, um eine Relation erkennbar zu machen.
-            Diese Grafik zeigt das Billige Weine eine Große diskrepant in der Qualität aufweisen, diese können von gut bis ungenießbar reichen, wobei teurere Weine oft besser bewertet werden.</p>
+  <div id="priceandpoints" class="scatter_wrapper pb-28 pt-8 mx-[5%] md:ml-[20%]">
+    <div class="md:grid md:grid-cols-6 md:gap-y-1">
+      <div class="md:col-span-2">
+        <h1 class="text-2xl md:text-5xl font-semibold pb-8">Preis und Punkte</h1>
+        <p>
+          "Lisa" ist im Supermarkt und sieht viele Weine, recht daneben sieht
+          sie diese Grafik. Verschiedene Weintester haben Punkte an Weine
+          vergeben, dazu gibt der Markt die Informationen der Preise zusätzlich
+          an, um eine Relation erkennbar zu machen. Diese Grafik zeigt das
+          Billige Weine eine Große diskrepant in der Qualität aufweisen, diese
+          können von gut bis ungenießbar reichen, wobei teurere Weine oft besser
+          bewertet werden.
+        </p>
       </div>
       <div class="relative p-4 grid grid-cols-3 gap-4 col-span-4 justify-center">
         <div id="my_dataviz"></div>
