@@ -8,7 +8,7 @@
   <WineSelector />
   <Story text="Lisa ist fasziniert von der Vielzahl an Weinflaschen im Regal. Sie schaut nach Bewertungen, um ihre Entscheidung zu treffen." img="illustration_4" />
  <clouds />
- <Story text="Lisa überlegt, ob wohl der teurere Wein besser sei oder ihr auch ein etwas Günstigerer reicht." img="illustration_5" />
+ <Story text="Lisa überlegt, ob wohl der teurere Wein besser sei oder ihr auch ein etwas Günstigerer reicht." img="illustration_4" />
  <scatter />
  <Story text="Durch die helfende App konnte Lisa sich rasch für eine Flasche entscheiden." img="illustration_6" />
 <MapWrapper />

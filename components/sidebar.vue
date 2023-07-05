@@ -39,22 +39,6 @@
                   />
                 </svg>
                 <a
-                  href="#"
-                  class="block text-s text-black-700 capitalize font-semibold hover:text-red-600 active:text-red-600"
-                  >Home</a
-                >
-              </button>
-            </div>
-
-            <div class="px-10 py-2">
-              <button class="flex items-center space-x-3">
-                <svg class="w-6 h-6" stroke="currentColor">
-                  <path
-                    stroke-width="2"
-                    d="M6,3l0,6c0,2.97,2.16,5.43,5,5.91V19H8v2h8v-2h-3v-4.09c2.84-0.48,5-2.94,5-5.91l0-6H6z M16,8H8l0-3h8C16,5,16,8,16,8z"
-                  />
-                </svg>
-                <a
                   href="#introduction"
                   class="block text-s text-black-700 capitalize font-semibold hover:text-red-600 active:text-red-600"
                   >Einführung</a
@@ -87,7 +71,7 @@
                 <a
                   href="#wordcloud"
                   class="block text-s text-black-700 capitalize font-semibold hover:text-red-600 active:text-red-600"
-                  >Wordcloud</a
+                  >Weinbeschreibung</a
                 >
               </button>
             </div>
@@ -102,7 +86,7 @@
                 <a
                   href="#priceandpoints"
                   class="block text-s text-black-700 capitalize font-semibold hover:text-red-600 active:text-red-600"
-                  >Preis</a
+                  >Wertigkeit</a
                 >
               </button>
             </div>
@@ -117,7 +101,7 @@
                 <a
                   href="#worldmap"
                   class="block text-s text-black-700 capitalize font-semibold hover:text-red-600 active:text-red-600"
-                  >Karte</a
+                  >Herkunft</a
                 >
               </button>
             </div>
@@ -132,7 +116,7 @@
                 <a
                   href="#titles"
                   class="block text-s text-black-700 capitalize font-semibold hover:text-red-600 active:text-red-600"
-                  >Titel</a
+                  >Weinetikett</a
                 >
               </button>
             </div>
